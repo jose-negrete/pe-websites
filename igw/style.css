@@ -1,0 +1,220 @@
+/* 
+font-family: 'Amatic SC', cursive;
+font-family: 'Megrim', cursive;
+font-family: 'Knewave', cursive;
+font-family: 'Red Hat Display', sans-serif;
+*/
+
+* {
+	/*	border:  1px solid red; */
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+section > .inner-column {
+	border-bottom: dotted 5px red;
+}
+
+section + section {
+	margin: 50px 0;
+}
+
+#home p + p {
+	margin-bottom: 50px;
+}
+
+.last-p {
+	margin-bottom: 50px;
+}
+
+body {
+	margin: 10px 0 50px;
+	background: linear-gradient(
+		oldlace,
+		papayawhip,
+		blanchedalmond,
+		wheat,
+		navajowhite
+	);
+}
+
+.inner-column {
+	max-width: 75ch;
+	margin: auto;
+}
+
+/*h2,
+p {
+	margin: 15px 5px;
+}*/
+
+h2 {
+	letter-spacing: 0.04em;
+	font-family: "Lemon", cursive;
+	text-shadow: 2px 2px black;
+	color: orangered;
+	font-size: 28px;
+	margin: 25px 10px;
+}
+
+p {
+	letter-spacing: 0.04em;
+	line-height: 1.2;
+	font-family: "Red Hat Display", sans-serif;
+	font-weight: 300;
+	margin: 15px 10px;
+}
+
+/* HEADER */
+
+.banner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.banner picture {
+	display: inline-block;
+	max-width: 120px;
+}
+
+.banner img {
+	width: 100%;
+	height: auto;
+	display: block;
+	filter: invert(190%) saturate(200%);
+}
+
+.banner h1 {
+	font-family: "Megrim", cursive;
+	font-size: clamp(16px, 11vw, 56px);
+	text-shadow: 2px 2px hotpink;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 10px 0;
+}
+
+nav a {
+	font-family: "Amatic SC", cursive;
+	color: black;
+	font-size: clamp(16px, 8vw, 32px);
+	font-weight: 700;
+	text-decoration: none;
+	padding: 5px 10px;
+	border-bottom: dotted 5px transparent;
+}
+
+a:hover {
+	border-bottom: dotted 5px red;
+}
+
+/* HOME */
+
+#home picture,
+#about picture {
+	display: block;
+}
+
+#home img,
+#about img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+/* SHOP */
+
+.garden-container picture,
+.contact-container picture,
+.friends-container picture {
+	display: flex;
+}
+
+.garden-container img,
+.contact-container img,
+.friends-container img {
+	width: 50%;
+	height: auto;
+}
+
+/* EVENTS */
+
+#events h2 {
+	font-family: "Amatic SC", cursive;
+	text-shadow: none;
+	color: red;
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+}
+
+#events p {
+	font-size: clamp(8px, 4vw, 14px);
+	margin-top: 0;
+}
+
+.events-container {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	gap: 10px;
+	margin-bottom: 45px;
+}
+
+#events img {
+	width: clamp(100px, 50vw, 300px);
+	height: auto;
+}
+
+/* CONTACT */
+
+#contact a {
+	color: magenta;
+	text-decoration: none;
+}
+
+#contact a:hover {
+	border-bottom: none;
+	background-color: lime;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 600px) {
+	.banner picture {
+		max-width: 140px;
+	}
+
+	#home img,
+	#about img {
+		border-radius: 15px;
+		box-shadow: 0 0 20px 1px grey;
+	}
+
+	#events img {
+		border-radius: 5px;
+		box-shadow: 2px 2px 15px grey;
+	}
+
+	.garden-container picture,
+	.contact-container picture,
+	.friends-container picture {
+		justify-content: space-between;
+	}
+
+	.garden-container img,
+	.contact-container img,
+	.friends-container img {
+		width: 49%;
+		border-radius: 10px;
+		box-shadow: 0 0 15px grey;
+	}
+}

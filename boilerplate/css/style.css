@@ -1,0 +1,73 @@
+@import 'meyer-reset.css';
+
+body * {
+		border: 1px solid red;
+}
+
+html {
+	scroll-behavior: smooth;
+
+}
+
+.inner-column {
+	max-width: 75ch;
+	margin: auto;
+}
+
+/* HEADER */
+
+header {
+	margin: 20px 0;
+}
+
+header h1 {
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+
+/* MAIN */
+
+picture {
+	display: block;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h2 {
+	margin: 20px 10px 15px;
+}
+
+p {
+	margin: 15px 10px;
+}
+
+.img-container {
+	display: flex;
+}
+
+/* FOOTER */
+
+footer {
+	margin: 15px 10px 10px;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+footer div a {
+	display: block;
+}
+
