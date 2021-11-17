@@ -1,13 +1,12 @@
 @import 'meyer-reset.css';
+@import 'reset.css';
 
 body * {
 		border: 1px solid red;
-		background-color: wheat;
 }
 
-html {
-	scroll-behavior: smooth;
-
+body {
+	background-color: wheat;
 }
 
 .inner-column {
@@ -33,16 +32,6 @@ nav {
 }
 
 /* MAIN */
-
-picture {
-	display: block;
-}
-
-img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
 
 h2 {
 	margin: 20px 10px 15px;
