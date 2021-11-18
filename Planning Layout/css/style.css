@@ -52,14 +52,14 @@ h2 + p {
 
 /* SITE SECTIONS */
 
-.real-header {
+.site-header {
 	background-color: skyblue;
 	position: sticky;
 	top: 0;
 	box-shadow: 0 2px 5px black;
 }
 
-.real-header .inner-column {
+.site-header .inner-column {
 	padding: 14px;
 }
 .page-content {
@@ -69,10 +69,9 @@ h2 + p {
 	flex-grow: 1;
 }
 
-.site-header {
+.page-header {
 /*	background-color: skyblue;
 */
-
 	background-color: rgba(255,255,255,.4);
 }
 
@@ -98,10 +97,10 @@ h2 + p {
 }
 
 @media (min-width: 700px) {
-	.site-header, .contact {
+	.page-header, .contact {
 		background-color: transparent;
 	}
-	.site-header{
+	.page-header{
 		color: lightgreen;
 		text-shadow: -2px 2px 0 black;
 	}
