@@ -1,0 +1,127 @@
+@import 'meyer-reset.css';
+@import 'reset.css';
+
+html {
+	background-color: wheat;
+}
+
+/* STRUCTURE */
+
+.inner-column {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 30px 15px;
+/*	border: 1px solid blue;*/
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+	font-family: sans-serif;
+	font-size: 48px;
+}
+
+h2 {
+	font-family: sans-serif;
+	font-size: 30px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.4;
+	font-family: sans-serif;
+}
+
+p + p {
+	margin-top: 14px;
+}
+
+h1 + p {
+	margin-top: 20px;
+}
+
+h2 + p {
+	margin-top: 20px;
+}
+
+/* SITE SECTIONS */
+
+.real-header {
+	background-color: skyblue;
+	position: sticky;
+	top: 0;
+	box-shadow: 0 2px 5px black;
+}
+
+.real-header .inner-column {
+	padding: 14px;
+}
+.page-content {
+	background-image: url("https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=876&q=80");
+	background-size: cover;
+	background-position: center center;
+	flex-grow: 1;
+}
+
+.site-header {
+/*	background-color: skyblue;
+*/
+
+	background-color: rgba(255,255,255,.4);
+}
+
+.about {
+/*	background-color: lightgreen;
+*/	background-color: skyblue;
+}
+
+.contact {
+/*	background-color: red;
+*/
+	color: white;
+	background-color: rgba(255,255,255,.4);
+}
+
+.site-footer {
+	background-color: #333;
+	color: white;
+	position: fixed;
+	bottom:  0;
+	left: 0;
+	width: 100%;
+}
+
+@media (min-width: 700px) {
+	.site-header, .contact {
+		background-color: transparent;
+	}
+	.site-header{
+		color: lightgreen;
+		text-shadow: -2px 2px 0 black;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
