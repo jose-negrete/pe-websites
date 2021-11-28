@@ -4,7 +4,7 @@
 
 		<div class="mod-container">
 			<div class="mod">
-				<a href="" class="mod-logo">
+				<a href="#" class="mod-logo">
 					<picture>
 						<img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1121/original/standard.png" alt="logo">
 
@@ -18,7 +18,7 @@
 			</div>
 
 			<div class="mod">
-				<a href="" class="mod-logo">
+				<a href="#" class="mod-logo">
 					<picture>
 						<img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1121/original/standard.png" alt="logo">
 						
@@ -32,7 +32,7 @@
 			</div>
 
 			<div class="mod">
-				<a href="" class="mod-logo">
+				<a href="#" class="mod-logo">
 					<picture>
 						<img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1121/original/standard.png" alt="logo">
 						
@@ -46,7 +46,7 @@
 			</div>
 
 			<div class="mod">
-				<a href="" class="mod-logo">
+				<a href="#" class="mod-logo">
 					<picture>
 						<img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1121/original/standard.png" alt="logo">
 						
@@ -60,7 +60,7 @@
 			</div>
 
 			<div class="mod">
-				<a href="" class="mod-logo">
+				<a href="#" class="mod-logo">
 					<picture>
 						<img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1121/original/standard.png" alt="logo">
 						
@@ -74,7 +74,7 @@
 			</div>
 
 			<div class="mod">
-				<a href="" class="mod-logo">
+				<a href="#" class="mod-logo">
 					<picture>
 						<img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1121/original/standard.png" alt="logo">
 						
@@ -88,7 +88,7 @@
 			</div>
 
 			<div class="mod">
-				<a href="" class="mod-logo">
+				<a href="#" class="mod-logo">
 					<picture>
 						<img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1121/original/standard.png" alt="logo">
 						
@@ -102,7 +102,7 @@
 			</div>
 
 			<div class="mod">
-				<a href="" class="mod-logo">
+				<a href="#" class="mod-logo">
 					<picture>
 						<img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1121/original/standard.png" alt="logo">
 						
@@ -116,7 +116,7 @@
 			</div>
 
 			<div class="mod">
-				<a href="" class="mod-logo">
+				<a href="#" class="mod-logo">
 					<picture>
 						<img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1121/original/standard.png" alt="logo">
 						
@@ -130,7 +130,7 @@
 			</div>
 
 			<div class="mod">
-				<a href="" class="mod-logo">
+				<a href="#" class="mod-logo">
 					<picture>
 						<img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1121/original/standard.png" alt="logo">
 						
@@ -144,7 +144,7 @@
 			</div>
 
 			<div class="mod">
-				<a href="" class="mod-logo">
+				<a href="#" class="mod-logo">
 					<picture>
 						<img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1121/original/standard.png" alt="logo">
 						
@@ -158,7 +158,7 @@
 			</div>
 
 			<div class="mod">
-				<a href="" class="mod-logo">
+				<a href="#" class="mod-logo">
 					<picture>
 						<img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1121/original/standard.png" alt="logo">
 						

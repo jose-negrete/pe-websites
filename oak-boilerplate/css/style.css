@@ -1,5 +1,5 @@
-@import 'setup.css';
 @import 'meyer-reset.css';
+@import 'setup.css';
 
 /*
 font-family: 'DM Serif Display', serif;
@@ -48,7 +48,7 @@ nav, h2, .mod-name, form input {
 
 /* Statement */
 
-.statement {
+.statement h1 {
 	font-size: 44px;
 	font-family: 'DM Serif Display', serif;
 	max-width: 900px;
@@ -56,28 +56,20 @@ nav, h2, .mod-name, form input {
 
 /* Projects */
 
-
-/*
-
-⬇️ Try out grid instead of flexbox ⬇️
-
-*/
-
 .mod-container {
-	display: grid;
-  	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  	grid-gap: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 }
 
-.mod-container > * {
-	margin-top: 75px;
-}
 
 .mod {
+	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
-	gap: 25px;
+	gap: 15px;
 	line-height: 1.2;
+	margin-top: 100px;
 }
 
 .mod-logo {
@@ -117,7 +109,7 @@ nav, h2, .mod-name, form input {
 	color: dimgrey;
 } 
 
-.clients p:nth-of-type(2) a, span {
+.clients p:nth-of-type(2) a, footer span {
 	font-weight: 600;
 	color: dimgrey;
 	text-decoration: none;
@@ -129,7 +121,7 @@ nav, h2, .mod-name, form input {
 
 /* Footer */
 
-span {
+footer span {
 	color: black;
 }
 
@@ -172,9 +164,9 @@ form input:last-child {
 }
 
 .link-container {
-	display: grid;
-	grid-template-columns: repeat(1, minmax(200px, 1fr));
- 	grid-gap: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
 	line-height: 1.2;
 	font-size: 18px;
 	margin: 60px 0;
@@ -201,20 +193,25 @@ footer a {
   	max-width: 100%;
  	}
 
-  .mod-container {
-  	grid-template-columns: repeat(2, minmax(200px, 1fr));
- 	}
+  .mod {
+  	flex-basis: 48%;
+  }
 
   .link-container {
-	grid-template-columns: repeat(2, minmax(200px, 1fr));
+		flex-flow: row wrap;
+		justify-content: space-between;
+		gap: 15px;
  	}
 
+ 	.link-block {
+ 		flex-basis: 48%;
+ 	}
 }
 
 @media only screen and (min-width: 720px) {
   .statement {
-	font-size: 64px;
-	padding: 120px 0;
+		font-size: 64px;
+		padding: 120px 0;
  	}
 }
 
@@ -222,29 +219,31 @@ footer a {
 
 	.clients-container {
 		display: flex;
+		justify-content: space-between;
+		gap: 15px;
 	}
 
 	.clients-container > * {
-		width: 50%;
+		flex-basis: 48.5%;
 	}
 
 	.just-here-to-flex p:first-child {
 		margin-top: 0;
 	}
 
-	.mod-container {
-  	grid-template-columns: repeat(3, minmax(200px, 1fr));
- 	}
+	.mod {
+   flex-basis: 31%;
+  }
 
-  .link-container {
-	grid-template-columns: repeat(4, minmax(200px, 1fr));
+  .link-block {
+  	flex-basis: 23%;
 	}
 }
 
 
 @media only screen and (min-width: 1200px) {
 
-.mod-container {
-  	grid-template-columns: repeat(4, minmax(200px, 1fr));
- 	}
+	.mod {
+		flex-basis: 23%;
+	}
 }

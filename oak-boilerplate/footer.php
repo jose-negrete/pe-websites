@@ -11,12 +11,12 @@
 		</form>
 
 		<div class="link-container">
-			<div class="link-block">
+			<address class="link-block">
 				<a href="#">123 Main St<br>
 				13th Suite 69<br>
 				Anytown, USA<br>
 				98765</a>
-			</div>
+			</address>
 
 			<div class="link-block">
 				<a href="#">nothing@nowhere.com</a><br>
