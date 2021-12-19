@@ -1,0 +1,218 @@
+@import "meyer-reset.css";
+@import "setup.css";
+
+/*font-family: 'Jost', sans-serif;
+*/
+body {
+	font-family: 'Jost', sans-serif;
+	background-color: #ebebeb;
+}
+
+header + *  {
+	position: absolute;
+}
+
+.first-row {
+	display: flex;
+	flex-direction: row;
+	margin-top: 25%;
+	justify-content: space-between;
+	gap: 4%;
+	width: 84vw;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	font-size: min(4.8vw, 32px);
+	align-items: center;
+	color: #666666; /* 👿 */
+	justify-content: space-around;
+	flex-basis: 28%;
+	letter-spacing: 0.05em;
+}
+
+.about {
+	font-size: min(4.12vw, 28px);
+	flex-basis: 65%;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+	padding: 3% 3%;
+	color: #282828;
+}
+
+strong {
+	font-weight: 700;
+}
+
+/* Projects */
+
+#projects {
+	margin-top: 77.1%;
+	margin-left: 26%;
+	position: absolute;
+	width: 74vw;
+	z-index: -1;
+}
+
+ol {
+	display: flex;
+	flex-direction: column;
+}
+
+#projects h1 {
+	font-size: min(5.8vw);
+	background-color: #ffbe78;
+	color: black;
+	padding: 7% 0 7% 5%;
+
+}
+
+article {
+	background-color: #bdecff;
+	height: 50.9vw;
+}
+
+picture {
+	width: 120vw;
+}
+
+article p {
+	font-size: 4.5vw;
+	line-height: 1.2;
+	padding-top: 5%;
+	padding-right: 5%;
+	font-weight: 300;
+}
+
+.top {
+	display: flex;
+	align-items: center;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	padding: ;
+	font-size: 4.5vw;
+	padding: 7%;
+	color: firebrick;
+	font-style: italic;
+	font-family: 'Courier New', monospace;
+}
+
+/* SVG */
+
+svg {
+	position: absolute;
+}
+
+/* letters */
+
+.letters {
+	fill: lemonchiffon;
+	stroke-width: 1px;
+	stroke: black;
+}
+
+.t {
+	fill: #ffc79c;
+}
+
+.n {
+	fill: wheat;
+}
+
+.proj {
+	fill: lightgreen;
+}
+
+/* backgrounds */
+
+.background-top {
+	fill: #baffbf;
+}
+
+.background-right {
+	fill: #ffbaba;
+}
+
+.background-left {
+	fill: #c9e9ff;
+}
+
+.about-background {
+	fill: #cdc9ff;
+}
+
+.proj-background-left {
+	fill: thistle;
+}
+
+
+
+.proj-background {
+	fill: none;
+}
+
+/* gradients */
+
+stop {
+	stop-color: lemonchiffon;
+}
+
+#_Linear4 stop, #_Linear3 stop {
+	stop-color: lightgreen;
+}
+
+/* dividers */
+
+.dividers {
+	fill: #ff7a7a;
+	stroke-width: 1px;
+	stroke: black;
+}
+
+.middle-bar {
+	fill: #9cfff3;
+}
+
+aside {
+	position: absolute;
+	width: 20vw;
+	height: 60vw;
+	margin-top: 170%;
+	margin-left: 2.5%;
+	display: flex;
+	flex-direction: column;
+}
+
+aside svg {
+	width: 18vw;
+	fill: blue;
+}
+
+aside svg {
+	fill: grey;
+}
+
+aside a:last-child {
+	margin-top: 220%;
+	transform: rotate(180deg);
+	width: 18vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

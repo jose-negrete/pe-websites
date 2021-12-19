@@ -1,0 +1,127 @@
+@import 'meyer-reset.css';
+@import 'setup.css';
+
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'Istok Web', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+body {
+	background-color: #333;
+	font-family: 'Lato', sans-serif;
+	color: #dedede;
+	/*margin-top: 50px;*/
+}
+
+.inner-column {
+	width: 90%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+main {
+	margin-left: 55px;
+	margin-bottom: 100px;
+}
+
+/* text styling */
+
+header picture {
+	max-width: 300px;
+	margin: 50px auto;
+}
+
+
+h2 {
+	font-weight: 300;
+	font-size: 28px;
+	letter-spacing: 0.04em;
+	margin: 50px 0;
+	color: #F9460E;
+}
+
+a {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+h3 {
+	font-weight: 600;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: clamp(10px, 10vw, 18px);
+	letter-spacing: 0.04em;
+	padding-bottom: 2px;
+}
+
+h3:after { 
+	content: ".........................................................................................................................................."; 
+	font-weight: 200;
+}
+
+.arrow {
+	max-width: 12px;
+	width: 18vw;
+	position: relative;
+	bottom: 4px;
+	padding-left: 2px;
+	fill: #dedede;
+	stroke: #dedede;
+}
+
+p {
+	font-weight: 300;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	font-size: clamp(8px, 5vw, 16px);
+}
+
+dt {
+	margin-top: 25px;
+}
+
+dd {
+	margin-top: 2px;
+}
+
+/* Nav */
+
+nav {
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 45px;
+	border-right: 1px solid white;
+	overflow-x: hidden;
+	z-index: 1;
+	background-color: #333;
+}
+
+nav svg {
+	fill: #DEDEDE;
+	stroke: #DEDEDE;
+	padding: 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+nav svg:hover {
+	fill: #F9460E;
+	stroke: #F9460E;
+}
+
+
+
+
+
+
+
+
