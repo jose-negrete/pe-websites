@@ -1,0 +1,84 @@
+@import "meyer-reset.css";
+@import "setup.css";
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+:root {
+	--purple: #424294;
+	--yellow: #FBF6D9;
+}
+
+body {
+	background-color: var(--yellow);
+	color: var(--purple);
+	width: 90%;
+	margin: auto;
+	max-width: 800px;
+	margin-bottom: 50px;
+}
+
+header {
+	text-align: center;
+   font-size: clamp(32px, 18vw, 82px);
+	font-weight: 900;
+	margin: 50px 0;
+	font-family: 'Shrikhand', cursive;
+}
+
+main {
+	display: grid;
+  	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  	grid-gap: 20px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 25px;
+	background-color: var(--purple);
+	border-radius: 15px;
+	border: 7px solid var(--purple);
+	overflow: hidden;
+	color: var(--yellow);
+
+}
+
+img {
+  	filter: grayscale(100%);
+	mix-blend-mode: lighten;
+
+}
+
+h1, h2 {
+	letter-spacing: 0.06em;
+}
+
+h2, p {
+	padding: 0 5px;
+}
+
+h2 {
+	font-family: 'Shrikhand', cursive;
+	font-weight: 700;
+	font-size: 28px;
+}
+
+p {
+	flex-grow: 1;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-align: center;
+	background-color: var(--yellow);
+	color: var(--purple);
+	font-family: 'Courier Prime', monospace;
+	font-weight: 700;
+	padding: 20px;
+}
+
+
+
+
+

@@ -69,9 +69,6 @@ function renderTypesX($types) {
 }
 
 function renderTypes($types) {
-
-	
-
 	return implode(", ", $types);
 }
 

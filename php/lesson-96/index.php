@@ -61,6 +61,23 @@
 			}
 		}
 
+		echo "<hr>";
+
+		echo "<p>Does 34 match '34'?</p>";
+		echo "<p>1 means true</p>";
+
+		function compareNums ($num1, $num2){
+			$loose = $num1 == $num2;
+			$strict = $num1 === $num2;
+
+			echo "<p>Loose is $loose</p>";
+			echo "<p>Strict is $strict</p>";
+		}
+
+		echo	"<p>hello</p>";
+
+		compareNums (34, 34);
+
 	?>
 
 </body>

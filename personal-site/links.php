@@ -1,5 +1,12 @@
-<nav>
-	<h2><a href="#projects">Projects</a></h2>
-	<h2><a href="mailto:jnegete.nyc@gmail.com">Contact</a></h2>
-	<h2><a href="https://fishouttawater.substack.com/" target="_blank">Blog</a></h2>
-</nav>
+<section class="links courier">
+	<h4>LINKS–</h4>
+
+	<div>
+		<a href="#">CodePen</a>
+		<a href="#">GitHub</a>
+		<a href="#">Twitter</a>
+		<a href="#">Reddit</a>
+		<a href="#">CodeNewbie</a>
+		<a href="#">dev.to</a>
+	</div>
+</section>

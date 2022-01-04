@@ -1,213 +1,262 @@
 @import "meyer-reset.css";
 @import "setup.css";
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=STIX+Two+Text:wght@400;500;600;700&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/*font-family: 'Jost', sans-serif;
-*/
+:root {
+	--full: 10px;
+	--half: calc(var(--full) / 2);
+	--quarter: calc(var(--full) / 4);
+	--double: calc(var(--full) * 2);
+	--triple: calc(var(--full) * 3);
+	--quadruple: calc(var(--full) * 4);
+}
+
 body {
-	font-family: 'Jost', sans-serif;
-	background-color: #ebebeb;
+	font-family: 'Spartan', sans-serif;
+	margin: var(--full);
+	/*border: 2px solid black;*/
+	background-color: white;
 }
 
-header + *  {
-	position: absolute;
+section {
+	border: 2px solid black;
 }
 
-.first-row {
-	display: flex;
-	flex-direction: row;
-	margin-top: 25%;
-	justify-content: space-between;
-	gap: 4%;
-	width: 84vw;
+/*
+font-family: 'Courier Prime', monospace;
+400, 700
+
+font-family: 'STIX Two Text', serif;
+400, 500, 600, 700
+
+font-family: 'Spartan', sans-serif;
+100, 200, 300, 400, 500, 600, 700, 800, 900
+*/
+
+h1 {
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 1.4em;
 }
 
-nav {
-	display: flex;
-	flex-direction: column;
-	font-size: min(4.8vw, 32px);
-	align-items: center;
-	color: #666666; /* 👿 */
-	justify-content: space-around;
-	flex-basis: 28%;
-	letter-spacing: 0.05em;
-}
-
-.about {
-	font-size: min(4.12vw, 28px);
-	flex-basis: 65%;
+h2 {
+	font-size: 1em;
 	font-weight: 300;
-	letter-spacing: 0.05em;
-	line-height: 1.5;
-	padding: 3% 3%;
-	color: #282828;
+	line-height: 1.1em;
 }
 
-strong {
+h3 {
+	font-size: 0.8em;
+	font-weight: 200;
+	font-style: italic;
+	line-height: 1.3em;
+}
+
+h4, p {
+	font-family: 'STIX Two Text', serif;
+}
+
+h4 {
+	font-size: 0.5em;
+	font-weight: 700;
+	letter-spacing: 0.07em;
+}
+
+p a, a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Courier Prime', monospace;
 	font-weight: 700;
 }
 
-/* Projects */
-
-#projects {
-	margin-top: 77.1%;
-	margin-left: 26%;
-	position: absolute;
-	width: 74vw;
-	z-index: -1;
+h3, h4, p a, a {
+	font-style: italic;
 }
 
-ol {
+p, p a {
+	line-height: 1.2em;
+}
+
+p a {
+	letter-spacing: 0.03em;
+}
+
+p {
+	letter-spacing: 0.03em;
+}
+
+/* About */
+
+.about-content {
+	display: flex;
+	/*gap: var(--full);*/
+}
+
+.info {
+	color: white;
+	background-color: black;
+	padding: var(--full);
 	display: flex;
 	flex-direction: column;
+
+	gap: var(--double);
 }
 
-#projects h1 {
-	font-size: min(5.8vw);
-	background-color: #ffbe78;
-	color: black;
-	padding: 7% 0 7% 5%;
-
-}
-
-article {
-	background-color: #bdecff;
-	height: 50.9vw;
-}
-
-picture {
-	width: 120vw;
-}
-
-article p {
-	font-size: 4.5vw;
-	line-height: 1.2;
-	padding-top: 5%;
-	padding-right: 5%;
-	font-weight: 300;
-}
-
-.top {
+.welcome {
 	display: flex;
+	flex-direction: column;
+
+}
+
+.hello {
+	flex-basis: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: var(--full);
+	align-self: center;
+}
+
+.add-color {
+	background-color: black;
+	height: 20%;
+	/* figure out later */
+}
+
+.welcome picture {
+	background: linear-gradient(silver 40%, transparent);
+}
+
+.location {
+	border-top: 2px solid black;
+	position: sticky;
+	top: 0;
+
+}
+
+.location li {
+	padding: var(--full);
+	background-color: white;
+	overflow: hidden;
+}
+
+.location li:nth-of-type(1) h3 {
+	white-space: nowrap;
+	position: relative;
+	width: 332px;
+   animation: ticker 6s infinite linear;
+}
+
+@keyframes ticker {
+   0% {transform: translateX(0);}
+  	100% {transform: translateX(-100%);}
+}
+
+.location span {
+	margin-right: 30px;
+
+}
+
+.location li:nth-of-type(2) {
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-around;
 	align-items: center;
 }
 
-.bottom {
-	display: flex;
-	justify-content: space-between;
-	padding: ;
-	font-size: 4.5vw;
-	padding: 7%;
-	color: firebrick;
-	font-style: italic;
-	font-family: 'Courier New', monospace;
+.location svg {
+	max-width: 30px;
+	animation: pulse 2s infinite;
 }
 
-/* SVG */
-
-svg {
-	position: absolute;
+.mail path {
+	stroke-width: 8px;
 }
 
-/* letters */
-
-.letters {
-	fill: lemonchiffon;
-	stroke-width: 1px;
-	stroke: black;
+.location a {
+	width: 30px;
 }
 
-.t {
-	fill: #ffc79c;
-}
 
-.n {
-	fill: wheat;
-}
+@keyframes pulse {
+	0% {
+		background-color: black;
+		fill: black;
+	}
 
-.proj {
-	fill: lightgreen;
-}
+	10% {
+		background-color: dimgrey;
+		fill: dimgrey;
+	}
 
-/* backgrounds */
+	50% {
+		background-color: black;
+		fill: black;
+	}
 
-.background-top {
-	fill: #baffbf;
-}
-
-.background-right {
-	fill: #ffbaba;
-}
-
-.background-left {
-	fill: #c9e9ff;
-}
-
-.about-background {
-	fill: #cdc9ff;
-}
-
-.proj-background-left {
-	fill: thistle;
 }
 
 
 
-.proj-background {
-	fill: none;
+/* Projects */
+
+#projects, .blog, .links {
+	background-color: black;
+	color: white;
 }
 
-/* gradients */
-
-stop {
-	stop-color: lemonchiffon;
-}
-
-#_Linear4 stop, #_Linear3 stop {
-	stop-color: lightgreen;
-}
-
-/* dividers */
-
-.dividers {
-	fill: #ff7a7a;
-	stroke-width: 1px;
-	stroke: black;
-}
-
-.middle-bar {
-	fill: #9cfff3;
-}
-
-aside {
-	position: absolute;
-	width: 20vw;
-	height: 60vw;
-	margin-top: 170%;
-	margin-left: 2.5%;
+.projects-content, .blog, .links {
 	display: flex;
 	flex-direction: column;
+	gap: var(--quadruple);
+	padding: var(--triple);
 }
 
-aside svg {
-	width: 18vw;
-	fill: blue;
+.projects-content li, .blog li, .links div {
+	display: flex;
+	flex-direction: column;
+	gap: var(--double);
 }
 
-aside svg {
-	fill: grey;
+.projects-content div {
+	display: flex;
+	gap: var(--quadruple);
 }
 
-aside a:last-child {
-	margin-top: 220%;
-	transform: rotate(180deg);
-	width: 18vw;
+.projects-content a, .blog a {
+	font-family: 'Spartan', sans-serif;
+	font-size: 0.8em;
+	font-weight: 500;
+	font-style: normal;
+	text-decoration: underline;
 }
 
+.blog, .links {
+	margin-top: 2px;
+}
 
+.archive-link {
+	text-align: right;
+	
+}
 
+.too-big {
+	display: none;
+}
 
-
-
+@media only screen and (min-width: 650px) {
+	.about, .blog, .links, #projects {
+		display: none;
+	}
+  .too-big {
+   display: block;
+   height: 100%;
+   width: 100%;
+   font-size: 10vw;
+   content: "TOO BIG, REDUCE SCREEN SIZE!!!";
+  }
+}
 
 
 

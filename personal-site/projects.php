@@ -1,125 +1,40 @@
 <section id="projects">
 
-	<ol>
+	<picture>
+		<img src="images/across-diagonal.gif">
+	</picture>
+
+	<ul class="projects-content">
 		<li>
-			<h1>Intergalactic Plant World</h1>
-			<article>
-
-				<div class="top">
-					<picture>
-						<img src="images/skull-plant.png">
-					</picture>
-				
-					<p>Website for a succulent shop ran by hippies. The goal was to generate public interest without alienating their inner circle.</p>
-				</div>
-
-
-				<div class="bottom">
-					<a href="#">Case Study</a>
-					<a href="#">Website</a>
-				</div>
-			</article>
+			<h4>PROJECTS–</h4>
+		</li>
+		<li>
+			<h1>Pep Talk Generator</h1>
+			<p>Find the right thing to say with good vibes on-demand</p>
+			<div>
+				<a href="#">SITE</a>
+				<a href="#">CASE STUDY</a>
+			</div>
 		</li>
 
 		<li>
 			<h1>Intergalactic Plant World</h1>
-			<article>
-
-				<div class="top">
-					<picture>
-						<img src="images/skull-plant.png">
-					</picture>
-				
-					<p>Website for a succulent shop ran by hippies. The goal was to generate public interest without alienating their inner circle.</p>
-				</div>
-
-
-				<div class="bottom">
-					<a href="#">Case Study</a>
-					<a href="#">Website</a>
-				</div>
-			</article>
+			<p>Hippie-run succulent shop that needed exposure to the outside world.</p>
+			<div>
+				<a href="#">SITE</a>
+				<a href="#">CASE STUDY</a>
+			</div>
 		</li>
 
 		<li>
-			<h1>Intergalactic Plant World</h1>
-			<article>
-
-				<div class="top">
-					<picture>
-						<img src="images/skull-plant.png">
-					</picture>
-				
-					<p>Website for a succulent shop ran by hippies. The goal was to generate public interest without alienating their inner circle.</p>
-				</div>
-
-
-				<div class="bottom">
-					<a href="#">Case Study</a>
-					<a href="#">Website</a>
-				</div>
-			</article>
+			<h1>Super Responsive Layout Challenge</h1>
+			<p>Flex, SVGs, media queries OH MY!</p>
+			<div>
+				<a href="#">SITE</a>
+				<a href="#">CASE STUDY</a>
+			</div>
 		</li>
+	</ul>
 
-		<li>
-			<h1>Intergalactic Plant World</h1>
-			<article>
-
-				<div class="top">
-					<picture>
-						<img src="images/skull-plant.png">
-					</picture>
-				
-					<p>Website for a succulent shop ran by hippies. The goal was to generate public interest without alienating their inner circle.</p>
-				</div>
-
-
-				<div class="bottom">
-					<a href="#">Case Study</a>
-					<a href="#">Website</a>
-				</div>
-			</article>
-		</li>
-
-		<li>
-			<h1>Intergalactic Plant World</h1>
-			<article>
-
-				<div class="top">
-					<picture>
-						<img src="images/skull-plant.png">
-					</picture>
-				
-					<p>Website for a succulent shop ran by hippies. The goal was to generate public interest without alienating their inner circle.</p>
-				</div>
-
-
-				<div class="bottom">
-					<a href="#">Case Study</a>
-					<a href="#">Website</a>
-				</div>
-			</article>
-		</li>
-
-		<li>
-			<h1>Intergalactic Plant World</h1>
-			<article>
-
-				<div class="top">
-					<picture>
-						<img src="images/skull-plant.png">
-					</picture>
-				
-					<p>Website for a succulent shop ran by hippies. The goal was to generate public interest without alienating their inner circle.</p>
-				</div>
-
-
-				<div class="bottom">
-					<a href="#">Case Study</a>
-					<a href="#">Website</a>
-				</div>
-			</article>
-		</li>
-
-	</ol>
+	
 </section>

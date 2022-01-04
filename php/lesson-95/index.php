@@ -19,7 +19,7 @@
 	<section class="welcome">
 		<div class="inner-column">
 			<h1>Something to Guilt Trip them and Reel Them In</h1>
-			<h2>Elaborate some more. Blah Blah Blah yada yada.</h2>
+			<h2>Elaborate some more. Blah Blah yada yada.</h2>
 		</div>
 	</section>
 
@@ -121,7 +121,7 @@
 								echo $status; 
 							echo "</div>";
 						echo "</div>";
-			}
+			}	
 
 						echo "</div>";
 				echo "</div>";
