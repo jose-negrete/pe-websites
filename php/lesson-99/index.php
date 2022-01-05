@@ -38,8 +38,15 @@
 				$blurb = "$name's stuff";
 			}
 
-			echo 
+			$fullBlurb = $blurb;
 
+			if (strlen($blurb) > 72) {
+				
+				$blurb = substr($blurb, 0, 72) . '...';
+			}
+
+
+			echo 
 			"<div class='card'>
 				<picture>
 					<img src='images/$image' alt='Photo of student'>

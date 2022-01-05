@@ -12,7 +12,7 @@ body {
 	color: var(--purple);
 	width: 90%;
 	margin: auto;
-	max-width: 800px;
+	max-width: 980px;
 	margin-bottom: 50px;
 }
 
@@ -46,7 +46,6 @@ main {
 img {
   	filter: grayscale(100%);
 	mix-blend-mode: lighten;
-
 }
 
 h1, h2 {
