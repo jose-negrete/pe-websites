@@ -29,6 +29,7 @@
 			$link = $student["link"];
 			$linkContent = $student["linkContent"];
 			$image = $student["image"];
+			$fullBlurb = $student["blurb"];
 
 			if (!$linkContent) {
 				$linkContent = 'Click here';
@@ -38,13 +39,15 @@
 				$blurb = "$name's stuff";
 			}
 
-			$fullBlurb = $blurb;
+			
+
+			// if (strlen($blurb) > 72) {
+			// 	$blurb = substr($blurb, 0, 72) . '...';
+			// }
 
 			if (strlen($blurb) > 72) {
-				
 				$blurb = substr($blurb, 0, 72) . '...';
 			}
-
 
 			echo 
 			"<div class='card'>
