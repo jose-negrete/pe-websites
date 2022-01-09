@@ -19,7 +19,7 @@
 		<p>Welcome to the Alpha-Net. WTF is the Alpha-Net you ask? This is where we host the work of our students (collectively known as Alpha-3) as they make the way through our flagship course, <a href="https://perpetual.education" target="_blank">Design for the Web</a>. We're sort of like <em>Bad News Bears</em> meets <em>The Social Network</em> but with less pazzazz. Our leader is this super legit dude we met on the internet named <a href="#derek">Derek</a> who's going to help us obliterate the job market without sacrificing our dignity. If you have any desire for a bright future, then please click all the links below.</p>
 	</article>
 	
-	<main>	
+	<main>
 
 	<?php 
 		$studentData = file_get_contents('students.json');

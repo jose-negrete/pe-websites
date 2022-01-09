@@ -9,3 +9,6 @@ I made it so you can easily edit the background and foreground color of your car
 
 Make sure to remove the curly braces. Don't delete the double quotes. 
 Capeesh?
+
+Wanna check the live site? Alright then, [your funeral](https://peprojects.dev/alpha-3/jose/lesson-99/).
+
