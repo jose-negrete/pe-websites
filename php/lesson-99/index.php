@@ -9,6 +9,45 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
+<style> 
+	<?php 
+		date_default_timezone_set('America/Los_Angeles');
+		$time = date('h:i');
+
+				if ($time >= '17:00' && $time <= '07:30') {
+				echo "
+				body {
+					background-color: #616EB2;
+					color:  #0B1222;
+				}
+
+				article a {
+					color: #CBD2EF;
+				}
+
+				.card {
+					background-color: #0B1222;
+					border-color: #0B1222;
+					color: #616EB2;
+				}
+
+				.card a {
+					background-color: #616EB2;
+					color: #0B1222;
+				}
+
+				.card a:hover {
+					background-color: #CBD2EF;
+					color: #0A101E;
+					text-shadow: none;
+					transition: all 0.5s ease-out;
+				}";
+		}
+
+	?>
+
+</style>
+
 <body>
 
 	<header>
@@ -16,7 +55,7 @@
 	</header>
 
 	<article>
-		<p>Welcome to the Alpha-Net. WTF is the Alpha-Net you ask? This is where we host the work of our students (collectively known as Alpha-3) as they make the way through our flagship course, <a href="https://perpetual.education" target="_blank">Design for the Web</a>. We're sort of like <em>Bad News Bears</em> meets <em>The Social Network</em> but with less pazzazz. Our leader is this super legit dude we met on the internet named <a href="#derek">Derek</a> who's going to help us obliterate the job market without sacrificing our dignity. If you have any desire for a bright future, then please click all the links below.</p>
+		<p>Welcome to the Alpha-Net. WTF is the Alpha-Net you ask? This is where we host the work of our students (collectively known as Alpha-3) as they make their way through our flagship course, <a href="https://perpetual.education" target="_blank">Design for the Web</a>. We're sort of like <em>Bad News Bears</em> meets <em>The Social Network</em> but with less pazzazz. Our leader is this super legit dude we met on the internet named <a href="#derek">Derek</a> who's going to help us obliterate the job market without sacrificing our dignity. If you have any desire for a bright future, then please click all the links below.</p>
 	</article>
 	
 	<main>
@@ -70,6 +109,8 @@
 				<a style='color:$bgColor;background-color:$fgColor;' href=$link target='_blank'>$linkContent</a>
 			</div>";
 		}
+
+		
 	?>	
 
 	</main>	

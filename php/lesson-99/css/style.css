@@ -158,8 +158,8 @@ article a:hover {
 
 @media only screen and (min-width: 420px) {
 	picture {
-			flex-basis: 50%;
-	max-width: 200px;
+		flex-basis: 50%;
+		max-width: 200px;
 	}
 
 	.card__content {
