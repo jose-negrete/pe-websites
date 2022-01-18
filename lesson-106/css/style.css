@@ -1,0 +1,177 @@
+@import 'meyer-reset.css';
+@import 'setup.css';
+
+:root {
+	--green: #ACD9BD;
+	--blue: #ACDDEB;
+	--purple: #DC9DC8;
+	--orange: #FDCC9A;
+	--red: #FB9196;
+	--white: #FBEFE4;
+}
+
+body * {
+	border: 2px solid black;
+	font-family: sans-serif;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: var(--white);
+}
+
+main {
+	flex: 1;
+}
+
+.inner-column * {
+	padding: 10px;
+}
+
+.inner-column {
+	margin: 0 auto;
+	width: 95%;
+	max-width: 980px;
+}
+
+.cta .inner-column {
+	width: 80%;
+	max-width: 540px;
+}
+
+article .inner-column,
+footer .inner-column {
+	width: 90%;
+	max-width: 950px;
+}
+
+/* Typography */
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h1, h2 {
+	font-weight: 700;
+}
+
+p {
+	margin-top: 30px;
+}
+
+.cta a, article a {
+	margin-top: 10px;
+	display: inline-block;
+	background-color: black;
+	color: white;
+}
+
+/* NAV */
+
+nav {
+	background-color: var(--green);
+}
+
+.nav__content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.nav__left {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/* DIPTYCH */
+
+.diptych {
+	background-color: var(--blue);
+}
+
+.diptych__content {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.diptych__text {
+	padding-top: 35px;
+	padding-bottom: 25px;
+}
+
+.diptych img {
+	/*box-sizing: border-box;*/
+}
+
+/* Call to Action */
+
+.cta {
+	background-color: var(--purple);
+}
+
+.cta__content {
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+.cta:last-child {
+	background-color: var(--red);
+}
+
+/* ARTICLE */
+
+article {
+	background-color: var(--orange);
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.article__header, .footer__header {
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+.article__body {
+	margin-top: 30px;
+}
+
+.article__body__content {
+	display: grid;
+ 	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+ 	grid-gap: 20px;
+}
+
+.article__card {
+	padding-top: 20px;
+}
+
+/* FOOTER */
+
+.footer__body__content {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 650px) {
+	.diptych__content {
+		display: flex;
+		align-items: center;
+	}
+
+	.diptych__content > * {
+		flex-basis: 50%;
+	}
+
+	.diptych__content picture {
+		order: 2;
+	}
+}
