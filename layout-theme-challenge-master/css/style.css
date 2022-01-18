@@ -126,6 +126,10 @@ html {
 	--roboto: 'Roboto', sans-serif;
 }
 
+body {
+	background-color: var(--black);
+}
+
 /* Typography */
 
 .intro-voice {
@@ -141,10 +145,8 @@ html {
 }
 
 body a {
-	letter-spacing: 0.04em;
-	font-weight: 500;
+	font-weight: 300;
 	text-transform: uppercase;
-	transition: all 0.2s ease-in;
 }
 
 body > * {
@@ -154,212 +156,193 @@ body > * {
 /* Header */
 
 .site-header {
-	background-color: var(--black);
-	color: var(--white);
-	font-weight: 300;
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 
-.site-menu, .user-menu {
+mast-head nav {
 	align-items: center;
 }
 
-.site-menu {
-	width: 75%;
-	justify-content: space-evenly;
+mast-head a {
+	opacity: 0.8;
+	transition: all 0.2s ease-in;
 }
 
-.user-menu {
-	width: 25%;
-	text-align: center;
-	white-space: nowrap;
+mast-head a:hover {
+	opacity: 1;
+	transition: all 0.2s ease-in;
 }
 
-.site-header a:hover, .logo img:hover {
-	color: var(--red);
+.site-header {
+	background-color: var(--black);
+	color: var(--white);
 }
 
-.logo img {
-	content: url('../images/ebike-images/ebike-logo.svg');
-	width: 120%;
+mast-head .logo img {
+	content: url("../images/ebike-images/ebike-logo.svg");
+	width: 100%;
+	height: 100%;
 }
 
-.logo img:hover {
-filter: invert(59%) sepia(99%) saturate(6916%) hue-rotate(358deg) brightness(66%) contrast(114%);
-}
-
-/* Welcome */
-
-.welcome {
-  background: url('../images/ebike-images/topo-img.jpg');
-  color: var(--black);
-  background-size: cover;
-}
-
-.welcome img {
-	content: url(../images/ebike-images/ebike-1.png);
-}
+/* Diptych */
 
 .welcome picture {
-	flex-basis: 65%;
+	display: none;
+	width: 0;
+}
+
+.welcome {
+	background-image: url("../images/ebike-images/diptych-img.jpeg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	position: relative;
 }
 
 .welcome text-content {
-	align-self: flex-start;
+	color: var(--white);
+	text-shadow: black 1px 0 10px;
+	text-align: center;
+	width: 90%;
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* 1st CTA */
+.welcome p {
+	margin-top: 50px;
+}
 
-call-to-action h2, 
-call-to-action p {
-	width: 100%;
-} 
+/* CTA 1 */
+
+.get-involved, .help-us {
+	background-color: var(--black);
+	color: var(--white);
+	background-image: url("../images/ebike-images/cta-img.png");
+	background-size: 75%;
+	background-repeat: no-repeat;
+	background-position: left 125% top 90%;
+}
 
 call-to-action {
-	padding: 50px;
-	width: 100%;
-	margin-left: auto;
-	gap: 20px;
+	padding-top: 50px;
+	padding-bottom: 40%;
 }
-
-.get-involved {
-	background-color: var(--grey);
-	background-image: url(../images/ebike-images/light.jpeg);
-	background-size: 55%;
-	background-repeat: no-repeat;
-	color: var(--white);
-	background-position: 0% 50%;
-}
-
 
 call-to-action a {
-	color: yellow;
-	white-space: nowrap;
+	border: 1.5px solid var(--white);
+	border-radius: 5px;
+	padding: 10px;
+	background-color: var(--black);
+	font-size: clamp(10px, 3vw, 16px);
+	transition: all 0.2s ease-in;
 }
-
-/*.get-involved */call-to-action a {
-	margin-left: auto;
-	margin-right: 25px;
-}
-
-call-to-action a::after {
-	content: ">";
-	vertical-align: text-top;
-}
-
 
 call-to-action a:hover {
-	color: var(--red);
+	background-color: var(--white);
+	color: var(--black);
+	transition: all 0.2s ease-in;
+}
+
+call-to-action p {
+	max-width: 500px;
+	margin: 50px 0 30px;
 }
 
 
 /* Article */
 
 .stuff {
-	background-color: var(--white);
 	color: var(--black);
-}
-
-article-card picture {
-	width: 100%;
+	background-color: var(--white);
 }
 
 article-card img {
-	content: url(../images/ebike-images/article-1.jpeg);
-	box-shadow: 0 1px 5px var(--grey);
-	margin-top: 20px;
+	content: url("../images/ebike-images/article-img.png");
 }
 
-article-card .attention-voice {
-	order: -1;
-	font-size: 20px;
-	font-style: italic;
+article-card h2,
+article-card p {
+	text-align: center;
+	width: 100%;
+}
+
+article-card h2 {
+	text-transform: uppercase;
+}
+
+article-card p {
+	opacity: 0.8;
+	width: 90%;
+	margin: 25px auto;
 }
 
 article-card a {
-	color: var(--red);
-	font-size: 16px;
-	margin-left: auto;
-	margin-right: 25px;
-
-}
-
-article-card a::after {
-	content: ">";
-	vertical-align: text-top;
+	color: var(--black);
+	border: 1.5px solid var(--black);
+	border-radius: 5px;
+	padding: 10px;
+	margin: auto;
+	transition: all 0.2s ease-in;
 }
 
 article-card a:hover {
-	color: var(--red);
-}
-
-/* 2nd CTA */
-
-.help-us {
-	background-color: var(--black);
-	background-image: url(../images/ebike-images/light-2.jpeg);
-	background-size: 55%;
-	background-repeat: no-repeat;
 	color: var(--white);
-	background-position: 100% 50%;
+	background-color: var(--black);
+	transition: all 0.2s ease-in;
 }
 
-.help-us call-to-action {
-	margin-left: 0;
+articles-intro article-grid {
+	grid-gap: 2em;
 }
 
 /* Footer */
 
+.site-menu .logo svg {
+	display: none;
+}
+
+.site-footer .logo:after {
+	content: url("../images/ebike-images/ebike-logo.svg");
+	opacity: 0.8;
+}
+
 .site-footer {
-	background-color: var(--grey);
-	color: var(--black);
-}
-
-.site-footer p,
-.site-footer h3 {
-	font-size: 1em;
-}
-
-.site-footer h3 {
-	color: var(--white);
-	margin-bottom: 25px;
-}
-
-.site-footer a {
-	padding: 0;
-	text-decoration: none;
-	margin-top: 10px;
-	text-transform: capitalize;
-}
-
-.site-footer a:hover {
-	color: yellow;
-}
-
-site-map {
-	display: flex;
-	justify-content: space-between;
-
+	background-color: var(--black);
 }
 
 site-map nav {
-	flex-basis: 25%;
-	min-width: 140px;
-	max-width: 140px;
-	justify-content: space-between;
-	margin-bottom: 50px;
+	min-width: 150px;
+	margin-bottom: 20px;
 }
 
-site-map .user-menu {
-	text-align: left;
+site-map a {
+	text-decoration: none;
+	padding: 0;
+	padding: 5px 10px 5px 0;
+	opacity: 0.8;
+	transition: all 0.2s ease-in;
 }
 
-@media only screen and (min-width: 500px) {
-	call-to-action {
-		width: 65%;
-	}
-
-	.help-us call-to-action a {
-		margin-left: 0;
-	}
+footer a:hover {
+	opacity: 1;
+	transition: all 0.2s ease-in;
 }
+
+site-map h3 {
+	margin-bottom: 10px;
+}
+
+site-map {
+	margin-top: 50px;
+}
+
+
+
+
+
 
