@@ -12,9 +12,10 @@
 <style> 
 	<?php 
 		date_default_timezone_set('America/Los_Angeles');
-		$time = date('h:i');
+		$time = date('h:i A');
+		$militaryTime = date("H:i A", strtotime($time));
 
-				if ($time >= '17:00' && $time <= '07:30') {
+				if ($militaryTime >= '05:00 PM' && $militaryTime <= '07:30 AM') {
 				echo "
 				body {
 					background-color: #616EB2;
@@ -66,6 +67,12 @@
 
 		shuffle($students);
 
+		date_default_timezone_set('America/Los_Angeles');
+		$time = date('H:i A');
+		$militaryTime = date("H:i A", strtotime($time));
+
+		echo $militaryTime;
+
 		foreach ($students as $student) {
 			$name = $student["name"];
 			$blurb = $student["blurb"];
@@ -77,7 +84,7 @@
 			$fgColor = $student["fgColor"];
 			$derek = "";
 
-			if ($student['name'] === 'sheriffderek') {
+			if ($student['name'] === 'sheriff derek') {
 				$derek = 'id = derek';
 			}
 

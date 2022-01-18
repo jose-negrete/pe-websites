@@ -66,6 +66,8 @@ main {
 	/* remove at query */
 	margin-top: 14px;
 	margin-bottom: 14px;
+
+	overflow: hidden;
 }
 
 
