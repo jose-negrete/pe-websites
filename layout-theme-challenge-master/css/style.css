@@ -1,0 +1,365 @@
+
+/* RESET */
+@import 'meyer-reset.css';
+@import 'setup.css';
+
+/*@import 'developer-styles.css'; */
+/* comment this ^ out - when you are ready */
+
+
+/* SETTINGS */
+@import 'settings.css'; /* variables/ etc */
+
+
+/* STRUCTURE */
+@import 'structure.css';
+
+
+/* TYPOGRAPHY */
+@import 'typography.css';
+
+
+/* COMPONENTS */
+@import 'components.css';
+
+
+/* MODULES */
+@import 'modules/masthead.css';
+@import 'modules/graphic-diptych.css';
+@import 'modules/call-to-action.css';
+@import 'modules/articles-intro.css';
+@import 'modules/article-card.css';
+@import 'modules/site-map.css';
+/* should everything/nothing be in it's own file? */
+
+
+/* ACTUAL SITE STYLES */
+html {
+	background-color: var(--white);
+}
+
+
+
+
+/*
+	This the area where you work out your styles 
+	If it makes sense, you can break these out into their own files.
+*/
+
+
+/* SITE SECTIONS */
+.site-header {
+	/*background-color: #9ec9eb;*/
+	position: sticky;
+	top: 0;
+	/*box-shadow: 0 2px 5px 0px rgba(0,0,0,.4);*/
+}
+.site-header inner-column {
+	padding: 14px;
+}
+
+
+
+
+
+
+
+/* OK! SITE STYLES! */
+.site-header {
+  background-color: var(--color);
+  color: var(--white);
+}
+
+
+/* things kinda just start grouping up... and you'll know when something should be grouped into another file - most of the time */
+
+
+.get-involved {
+  background-color:  var(--highlight);
+  background-image:  url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+} /* interesting way to include the whole image in your CSS */
+
+.get-involved inner-column {
+	/*max-width:  700px;*/
+}
+
+.get-involved call-to-action {
+
+}
+
+
+.stuff {
+  
+}
+
+.help-us {
+  
+}
+
+.site-footer {
+	background-color: var(--color);
+	color: var(--white);
+}
+
+.site-footer .logo {
+	max-width:  60px;
+}
+
+
+/* 
+/////////////////////////////////////////////////
+
+eBike Theme 
+
+////////////////////////////////////////////////
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Variables */
+
+html {
+	--grey: #939393;
+	--black: #323232;
+	--white: #FAFAFA;
+	--red: #E00E01;
+	--roboto: 'Roboto', sans-serif;
+}
+
+/* Typography */
+
+.intro-voice {
+	font-weight: 900;
+}
+
+.calm-voice {
+	font-weight: 400;
+}
+
+.attention-voice {
+	font-weight: 700;
+}
+
+body a {
+	letter-spacing: 0.04em;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in;
+}
+
+body > * {
+	font-family: var(--roboto);
+}
+
+/* Header */
+
+.site-header {
+	background-color: var(--black);
+	color: var(--white);
+	font-weight: 300;
+}
+
+.site-menu, .user-menu {
+	align-items: center;
+}
+
+.site-menu {
+	width: 75%;
+	justify-content: space-evenly;
+}
+
+.user-menu {
+	width: 25%;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.site-header a:hover, .logo img:hover {
+	color: var(--red);
+}
+
+.logo img {
+	content: url('../images/ebike-images/ebike-logo.svg');
+	width: 120%;
+}
+
+.logo img:hover {
+filter: invert(59%) sepia(99%) saturate(6916%) hue-rotate(358deg) brightness(66%) contrast(114%);
+}
+
+/* Welcome */
+
+.welcome {
+  background: url('../images/ebike-images/topo-img.jpg');
+  color: var(--black);
+  background-size: cover;
+}
+
+.welcome img {
+	content: url(../images/ebike-images/ebike-1.png);
+}
+
+.welcome picture {
+	flex-basis: 65%;
+}
+
+.welcome text-content {
+	align-self: flex-start;
+}
+
+/* 1st CTA */
+
+call-to-action h2, 
+call-to-action p {
+	width: 100%;
+} 
+
+call-to-action {
+	padding: 50px;
+	width: 100%;
+	margin-left: auto;
+	gap: 20px;
+}
+
+.get-involved {
+	background-color: var(--grey);
+	background-image: url(../images/ebike-images/light.jpeg);
+	background-size: 55%;
+	background-repeat: no-repeat;
+	color: var(--white);
+	background-position: 0% 50%;
+}
+
+
+call-to-action a {
+	color: yellow;
+	white-space: nowrap;
+}
+
+/*.get-involved */call-to-action a {
+	margin-left: auto;
+	margin-right: 25px;
+}
+
+call-to-action a::after {
+	content: ">";
+	vertical-align: text-top;
+}
+
+
+call-to-action a:hover {
+	color: var(--red);
+}
+
+
+/* Article */
+
+.stuff {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+article-card picture {
+	width: 100%;
+}
+
+article-card img {
+	content: url(../images/ebike-images/article-1.jpeg);
+	box-shadow: 0 1px 5px var(--grey);
+	margin-top: 20px;
+}
+
+article-card .attention-voice {
+	order: -1;
+	font-size: 20px;
+	font-style: italic;
+}
+
+article-card a {
+	color: var(--red);
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: 25px;
+
+}
+
+article-card a::after {
+	content: ">";
+	vertical-align: text-top;
+}
+
+article-card a:hover {
+	color: var(--red);
+}
+
+/* 2nd CTA */
+
+.help-us {
+	background-color: var(--black);
+	background-image: url(../images/ebike-images/light-2.jpeg);
+	background-size: 55%;
+	background-repeat: no-repeat;
+	color: var(--white);
+	background-position: 100% 50%;
+}
+
+.help-us call-to-action {
+	margin-left: 0;
+}
+
+/* Footer */
+
+.site-footer {
+	background-color: var(--grey);
+	color: var(--black);
+}
+
+.site-footer p,
+.site-footer h3 {
+	font-size: 1em;
+}
+
+.site-footer h3 {
+	color: var(--white);
+	margin-bottom: 25px;
+}
+
+.site-footer a {
+	padding: 0;
+	text-decoration: none;
+	margin-top: 10px;
+	text-transform: capitalize;
+}
+
+.site-footer a:hover {
+	color: yellow;
+}
+
+site-map {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+site-map nav {
+	flex-basis: 25%;
+	min-width: 140px;
+	max-width: 140px;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+site-map .user-menu {
+	text-align: left;
+}
+
+@media only screen and (min-width: 500px) {
+	call-to-action {
+		width: 65%;
+	}
+
+	.help-us call-to-action a {
+		margin-left: 0;
+	}
+}
+
