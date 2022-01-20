@@ -7,4 +7,5 @@
 	<meta property='og:image' content='images/default.png'>
 
 	<link rel='stylesheet' href='css/style.css'>
+
 </head>

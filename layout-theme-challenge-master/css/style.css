@@ -186,6 +186,11 @@ mast-head .logo img {
 	height: 100%;
 }
 
+.user-menu a span {
+	content: url("../images/ebike-images/user-logo.svg");
+	width: 35px;
+}
+
 /* Diptych */
 
 .welcome picture {
@@ -222,29 +227,27 @@ mast-head .logo img {
 .get-involved, .help-us {
 	background-color: var(--black);
 	color: var(--white);
-	background-image: url("../images/ebike-images/cta-img.png");
-	background-size: 75%;
-	background-repeat: no-repeat;
-	background-position: left 125% top 90%;
-}
+	text-shadow: black 1px 0 10px;
+	background-image: linear-gradient(rgba(50,50,50,0.7), rgba(50,50,50,0.7)), url("../images/ebike-images/cta-6.png");
+	background-size: cover;
+	background-position: center;
 
-call-to-action {
-	padding-top: 50px;
-	padding-bottom: 40%;
 }
 
 call-to-action a {
+	text-shadow: none;
 	border: 1.5px solid var(--white);
 	border-radius: 5px;
 	padding: 10px;
-	background-color: var(--black);
+	background-color: var(--white);
 	font-size: clamp(10px, 3vw, 16px);
 	transition: all 0.2s ease-in;
+	color: var(--black);
 }
 
 call-to-action a:hover {
-	background-color: var(--white);
-	color: var(--black);
+	background-color: var(--black);
+	color: var(--white);
 	transition: all 0.2s ease-in;
 }
 
@@ -299,6 +302,15 @@ article-card a:hover {
 articles-intro article-grid {
 	grid-gap: 2em;
 }
+
+/* CTA 2 */
+
+.help-us {
+	background-image: linear-gradient(rgba(50,50,50,0.7), rgba(50,50,50,0.7)), url("../images/ebike-images/cta-3.jpeg");
+	background-position: center right 100%;
+
+}
+
 
 /* Footer */
 
