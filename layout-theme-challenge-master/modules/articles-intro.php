@@ -7,8 +7,16 @@
     <p class='calm-voice'>Again, we totally just made that up. It's a box with boxes in it.</p>
   </header>
 
-  <article-grid>
-    <?php include('articles_data.php'); ?><!-- acting as an example database -->
+  <article-grid data-flickity='{ "wrapAround": true }'>
+    <?php include('bikes-data.php'); ?><!-- acting as an example database -->
+
+    <?php foreach ($database as $article) { ?> 
+      <?php include('article-card.php'); ?>
+    <?php } ?>
+  </article-grid>
+
+  <article-grid class="apparel" data-flickity='{ "wrapAround": true }'>
+    <?php include('apparel-data.php'); ?><!-- acting as an example database -->
 
     <?php foreach ($database as $article) { ?> 
       <?php include('article-card.php'); ?>

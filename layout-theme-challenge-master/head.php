@@ -8,4 +8,10 @@
 
 	<link rel='stylesheet' href='css/style.css'>
 
+<!-- FLICKITY CSS -->
+
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+<!-- FLICKITY OUT -->
+
 </head>

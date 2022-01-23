@@ -182,16 +182,19 @@ mast-head a:hover {
 
 mast-head .logo img {
 	content: url("../images/ebike-images/ebike-logo.svg");
-	width: 100%;
-	height: 100%;
+	width: 75%;
 }
 
-.user-menu a span {
+.user-menu a span{
 	content: url("../images/ebike-images/user-logo.svg");
-	width: 35px;
+	width: 25px;
 }
 
 /* Diptych */
+
+.welcome inner-column {
+	padding: 0;
+}
 
 .welcome picture {
 	display: none;
@@ -202,8 +205,11 @@ mast-head .logo img {
 	background-image: url("../images/ebike-images/diptych-img.jpeg");
 	background-size: cover;
 	background-position: center;
-	height: 100vh;
 	position: relative;
+}
+
+graphic-diptych {
+	min-height: 86vh;
 }
 
 .welcome text-content {
@@ -221,6 +227,15 @@ mast-head .logo img {
 .welcome p {
 	margin-top: 50px;
 }
+
+.welcome text-content .intro-voice {
+	font-size: clamp(40px, 6vw, 62px);
+}
+
+.welcome text-content .calm-voice {
+	font-size: clamp(1rem, 3vw, 1.4rem);
+}
+
 
 /* CTA 1 */
 
@@ -240,9 +255,11 @@ call-to-action a {
 	border-radius: 5px;
 	padding: 10px;
 	background-color: var(--white);
-	font-size: clamp(10px, 3vw, 16px);
-	transition: all 0.2s ease-in;
+/*	font-size: clamp(10px, 3vw, 16px);
+*/	transition: all 0.2s ease-in;
 	color: var(--black);
+	padding-bottom: 9px;
+	/*WHAT THE +FUCKKCKCKAHVAODIHVAHIVAH!!!!!*/
 }
 
 call-to-action a:hover {
@@ -261,27 +278,28 @@ call-to-action p {
 
 .stuff {
 	color: var(--black);
-	background-color: var(--white);
+	background-color: white;
 }
+
+
 
 article-card img {
-	content: url("../images/ebike-images/article-img.png");
+	/*content: url("../images/ebike-images/article-img.png");*/
 }
 
-article-card h2,
-article-card p {
-	text-align: center;
-	width: 100%;
-}
 
 article-card h2 {
 	text-transform: uppercase;
+	width: 75%;
 }
 
 article-card p {
 	opacity: 0.8;
-	width: 90%;
-	margin: 25px auto;
+	width: 75%;
+/*	position: absolute;
+	top: 72%;
+	left: 50%;
+	transform: translate(-50%,-50%);*/
 }
 
 article-card a {
@@ -289,7 +307,6 @@ article-card a {
 	border: 1.5px solid var(--black);
 	border-radius: 5px;
 	padding: 10px;
-	margin: auto;
 	transition: all 0.2s ease-in;
 }
 
@@ -300,7 +317,84 @@ article-card a:hover {
 }
 
 articles-intro article-grid {
-	grid-gap: 2em;
+	display: block;
+}
+
+article-card {
+	text-align: center;
+	max-width: 350px;
+	width: 80%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+		padding-bottom: 0;
+
+
+}
+
+article-grid .flickity-viewport {
+	height: 400px !important;
+}
+
+article-card p,
+article-card h2 {
+	margin: 10px auto 5px;
+}
+
+article-card picture {
+/*	margin-top: -40px;
+*/}
+
+article-card a {
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article-card .attention-voice {
+	font-size: 22px;
+}
+
+.apparel {
+	padding-bottom: 35px;
+}
+
+article-card {
+	padding: 0;
+}
+
+/* Article 2 */
+
+.apparel article-card picture {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article-grid .flickity-button svg {
+	fill: var(--black);
+}
+
+article-grid .flickity-button {
+	background: var(--white);
+	border-radius: 5px;
+	border: 1px solid var(--black);
+}
+
+.apparel article-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.apparel {
+	margin-top: 100px;
+}
+
+article-card a {
+	/*margin-bottom: 0;*/
 }
 
 /* CTA 2 */
@@ -308,7 +402,12 @@ articles-intro article-grid {
 .help-us {
 	background-image: linear-gradient(rgba(50,50,50,0.7), rgba(50,50,50,0.7)), url("../images/ebike-images/cta-3.jpeg");
 	background-position: center right 100%;
+}
 
+@media only screen and (min-width: 450px) {
+  .help-us {
+    background-attachment: fixed;
+  }
 }
 
 
