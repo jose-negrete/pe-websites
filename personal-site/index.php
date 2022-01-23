@@ -11,10 +11,10 @@
 </head>
 
 <body>
-	<div class="too-big">TOO BIG, REDUCE SCREEN SIZE!!!</div>
 
 	<?php 
 		include('about.php');
+		include('contact.php');
 		include('projects.php');
 		include('blog.php');
 		include('links.php');

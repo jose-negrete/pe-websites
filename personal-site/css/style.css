@@ -43,6 +43,7 @@ h2 {
 	font-size: 1em;
 	font-weight: 300;
 	line-height: 1.1em;
+
 }
 
 h3 {
@@ -90,6 +91,8 @@ p {
 .about-content {
 	display: flex;
 	/*gap: var(--full);*/
+
+	flex-direction: column;
 }
 
 .info {
@@ -102,19 +105,32 @@ p {
 	gap: var(--double);
 }
 
+.about-content picture {
+	background-size: cover;
+	background-repeat: none;
+	height: 100px;
+	width: 100%;
+}
+
+.about-content picture img {
+	display: none;
+}
+
 .welcome {
 	display: flex;
 	flex-direction: column;
-
 }
+
+
 
 .hello {
 	flex-basis: 30%;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-evenly;
 	padding: var(--full);
 	align-self: center;
+	width: 100%;
 }
 
 .add-color {
@@ -125,13 +141,13 @@ p {
 
 .welcome picture {
 	background: linear-gradient(silver 40%, transparent);
+	display: none;
 }
 
 .location {
 	border-top: 2px solid black;
 	position: sticky;
 	top: 0;
-
 }
 
 .location li {
@@ -245,18 +261,7 @@ p {
 	display: none;
 }
 
-@media only screen and (min-width: 650px) {
-	.about, .blog, .links, #projects {
-		display: none;
-	}
-  .too-big {
-   display: block;
-   height: 100%;
-   width: 100%;
-   font-size: 10vw;
-   content: "TOO BIG, REDUCE SCREEN SIZE!!!";
-  }
-}
+
 
 
 
