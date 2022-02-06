@@ -1,0 +1,53 @@
+@import 'meyer-reset.css';
+@import 'setup.css';
+
+
+.dom {
+	height: 60vh;
+	background-color: lightsalmon;
+}
+
+.pstate {
+	height: 10vh;
+	width: 100%;
+	background-color: palegreen;
+}
+
+div {
+	display: flex;
+}
+
+.code {
+	width: 50%;
+	height: 30vh;
+	background-color: lemonchiffon;
+}
+
+.pscode {
+	width: 50%;
+	height: 30vh;
+	background-color: lightblue;
+}
+
+.site-header {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-family: sans-serif;
+	letter-spacing: 0.06em;
+	font-weight: 300;
+}
+
+select {
+	opacity: 0.8;
+	border: none;
+}
+
+main header {
+	width: 100%;
+	padding: 5px;
+ 	font-family: sans-serif;
+	letter-spacing: 0.06em;
+	font-weight: 300;
+}
+
