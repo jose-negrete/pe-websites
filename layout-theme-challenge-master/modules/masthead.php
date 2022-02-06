@@ -7,12 +7,12 @@
 			<!-- or you could actually use the SVG -->
 		</a>
 
-		<a href='#'>
-			<span>Some page</span>
+		<a href='#ebikes'>
+			<span>E-bikes</span>
 		</a>
 
-		<a href='#'>
-			<span>"Masthead"</span>
+		<a href='#accessories'>
+			<span>accessories</span>
 		</a>
 	</nav>
 

@@ -7,7 +7,7 @@
     <p class='calm-voice'>Again, we totally just made that up. It's a box with boxes in it.</p>
   </header>
 
-  <article-grid data-flickity='{ "wrapAround": true }'>
+  <article-grid id="ebikes" data-flickity='{ "wrapAround": true }'>
     <?php include('bikes-data.php'); ?><!-- acting as an example database -->
 
     <?php foreach ($database as $article) { ?> 
@@ -15,7 +15,7 @@
     <?php } ?>
   </article-grid>
 
-  <article-grid class="apparel" data-flickity='{ "wrapAround": true }'>
+  <article-grid id="accessories" class="apparel" data-flickity='{ "wrapAround": true }'>
     <?php include('apparel-data.php'); ?><!-- acting as an example database -->
 
     <?php foreach ($database as $article) { ?> 

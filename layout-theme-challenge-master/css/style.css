@@ -124,6 +124,8 @@ html {
 	--white: #FAFAFA;
 	--red: #E00E01;
 	--roboto: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
+
 }
 
 body {
@@ -182,12 +184,58 @@ mast-head a:hover {
 
 mast-head .logo img {
 	content: url("../images/ebike-images/ebike-logo.svg");
-	width: 75%;
+	min-width: 20px;
 }
 
 .user-menu a span{
 	content: url("../images/ebike-images/user-logo.svg");
-	width: 25px;
+	width: 32px;
+}
+
+/* New header fixes */
+
+mast-head {
+	padding: 0;
+	display: flex;
+}
+
+mast-head .site-menu {
+	padding: 0;
+	width: 85%;
+	display: flex;
+	gap: 5%;
+	justify-content: flex-start;
+}
+
+mast-head .user-menu {
+	padding: 0;
+	width: 15%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+mast-head .user-menu a {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+mast-head .user-menu a span {
+	width: 32px;
+}
+
+mast-head .site-menu .logo {
+	width: 40px;
+}
+
+mast-head a {
+	padding: 0;
+	font-size: clamp(14px, 3vw, 16px);
+}
+
+.site-header inner-column {
+	padding: 10px;
 }
 
 /* Diptych */
