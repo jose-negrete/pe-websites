@@ -30,14 +30,6 @@
 		"fgColor": "{{ INPUT FOREGROUND COLOR }}"
 	},
 	{
-		"name": "Saul",
-		"link": "https://peprojects.dev/alpha-3/saul",
-		"image": "saul.jpg",
-
-		"bgColor": "{{ INPUT BACKGROUND COLOR }}",
-		"fgColor": "{{ INPUT FOREGROUND COLOR }}"
-	},
-	{
 		"name": "Brian",
 		"blurb": "Check out my projects and case studies 👨‍💻️",
 		"link": "https://peprojects.dev/alpha-3/bdlowery",
@@ -57,16 +49,6 @@
 		"fgColor": "{{ INPUT FOREGROUND COLOR }}"
 	},
 	{
-		"name": "Budi",
-		"blurb": "I'm a barista turned Perpetual Education- minted Web Developer. Dive in!",
-		"link": "https://peprojects.dev/alpha-3/budi/web-portal",
-		"linkContent": "Click here",
-		"image": "budi.png",
-
-		"bgColor": "{{ INPUT BACKGROUND COLOR }}",
-		"fgColor": "{{ INPUT FOREGROUND COLOR }}"
-	},
-	{
 		"name": "sheriff derek",
 		"blurb": "Someone's got to <em>design</em> this town.",
 		"link": "https://peprojects.dev/alpha-3/sheriff",
@@ -77,26 +59,10 @@
 		"fgColor": "{{ INPUT FOREGROUND COLOR }}"
 	},
 	{
-		"name": "Wytonya",
-		"link": "https://peprojects.dev/alpha-3/wytonya",
-		"image": "wytonya.png",
-
-		"bgColor": "{{ INPUT BACKGROUND COLOR }}",
-		"fgColor": "{{ INPUT FOREGROUND COLOR }}"
-	},
-	{
 		"name": "Josh",
 		"link": "https://peprojects.dev/alpha-3/josh",
 		"image": "josh.jpg",
 		
-		"bgColor": "{{ INPUT BACKGROUND COLOR }}",
-		"fgColor": "{{ INPUT FOREGROUND COLOR }}"
-	},
-	{
-		"name": "Natasha",
-		"link": "https://peprojects.dev/alpha-3/natmorrison",
-		"image": "natasha.jpg",
-
 		"bgColor": "{{ INPUT BACKGROUND COLOR }}",
 		"fgColor": "{{ INPUT FOREGROUND COLOR }}"
 	}
