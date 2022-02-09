@@ -6,6 +6,7 @@
 	<title>Lesson 125</title>
 </head>
 <body>
+	hello;
 	<?php
 		
 	?>
