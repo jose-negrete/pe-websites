@@ -20,6 +20,32 @@ body {
 	margin-bottom: var(--8);
 }
 
+.monospace {
+  font-family: monospace;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+.buttons {
+  margin-left: var(--4);
+  margin-top: var(--2);
+}
+
+.buttons a {
+  text-decoration: none;
+  font-weight: 400;
+  border: 3px outset silver;
+  display: inline-block;
+  padding: 2px;
+  background-color: silver;
+}
+
+.buttons a + a {
+  margin-left: var(--2);
+}
+
 .inner-column {
 	margin-left: 10px;
 	margin-right: 10px;

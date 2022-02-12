@@ -8,8 +8,23 @@
 	<title>J. Negrete - Developer / Designer</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
+<?php 
 
-<body>
+
+// Sets fontType variable to an empty value.
+$fontType = '';
+
+// Checks the value of the key for 'font' within the superglobal variable and assigns it to the fontType variable.
+if ($_GET['font']=='mono'){
+	$fontType = 'monospace';
+} else {
+	$fontType = 'sans-serif';
+}
+
+?>
+
+<!-- Using the fontType value for the class attribute -->
+<body class="<?=$fontType?>">
 	<header class="site-header">
 		<div class="inner-column">
 			<nav class="site-menu">
@@ -19,6 +34,14 @@
 				<a href="#blog">Blog</a>
 			</nav>
 		</div>
+
+		<!-- Sets anchor links that, when clicked will become the value for the 'font' key in the superglobal variable. -->
+		<div class="buttons">
+		<a href="?font=mono">Mono</a>
+
+		<a href="?font=sans-serif">Sans-Serif</a>
+	</div>
+
 	</header>
 
 	<main>
@@ -26,6 +49,7 @@
 			<div class="inner-column">
 				<div class="about-content">
 					<p>Jose Negrete is a web developer and UX designer who helps small businesses and non-profits with bringing their ideas to the next level by using the most dangerous tool known to modern man (the web). Unlike my competitors, I have an adaptive skill set that is valuable at every stage of the&nbsp;design&nbsp;process.</p>
+					
 				</div>
 			</div>
 		</section>
