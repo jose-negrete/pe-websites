@@ -26,7 +26,7 @@
 				// apply the values from variables to HTML
 
 				if ($name === "Case Study") {
-					echo "<a href=$url>$name</a>";
+					echo "<a href=case-studies/$url>$name</a>";
 				} else {
 				echo "
 				<a href=$url target='_blank'>$name</a>";

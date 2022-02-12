@@ -6,7 +6,7 @@
 	<meta name="description" content="The sketchiest dude on the web">
 	<meta property="og:image" content="[[]]">
 	<title>J. Negrete - Developer / Designer</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>

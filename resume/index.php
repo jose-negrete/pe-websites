@@ -6,14 +6,14 @@
 	<meta name="description" content="The sketchiest dude on the web">
 	<meta property="og:image" content="[[]]">
 	<title>J. Negrete - Developer / Designer</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 	<header class="site-header">
 		<div class="inner-column">
 			<nav class="site-menu">
-				<a href="./">JN</a>
+				<a href="../">JN</a>
 				<a href="#experience">Experience</a>
 				<a href="#contact">Contact</a>
 				<a href="https://fishouttawater.substack.com/archive?utm_source=menu-dropdown" target="_blank">Blog</a>
@@ -30,7 +30,7 @@
 				</header>
 
 		<?php 
-			include('database.php');
+			include('../database.php');
 
 			$jobs = $resume['jobs'];
 
@@ -58,7 +58,19 @@
 			</div>
 		</section>
 
-		<?php include('contact.php');?>
+		<?php include('../modules/contact.php');?>
+		<footer>
+		<div class="inner-column">
+			<div class="footer-content">
+				<a href="https://codepen.io/j-negrete" target="_blank">CodePen</a>
+				<a href="https://github.com/jose-negrete" target="_blank">GitHub</a>
+				<a href="https://fishouttawater.substack.com/" target="_blank">Substack</a>
+				<a href="https://www.reddit.com/user/purpleplatypusparty" target="_blank">Reddit</a>
+				<a href="https://dev.to/jnegrete" target="_blank">dev.to</a>
+				<a href="https://community.codenewbie.org/jnegrete" target="_blank">CodeNewbie</a>
+			</div>
+		</div>
+	</footer>
 		
 	</article>
 

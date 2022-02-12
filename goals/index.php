@@ -6,7 +6,7 @@
 	<meta name="description" content="The sketchiest dude on the web">
 	<meta property="og:image" content="[[]]">
 	<title>J. Negrete - Developer / Designer</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<style>
 		.goals {
 			margin-top: 120px;
@@ -20,7 +20,7 @@
 	<header class="site-header">
 		<div class="inner-column">
 			<nav class="site-menu">
-				<a href="./">JN</a>
+				<a href="../">JN</a>
 				<a href="https://perpetual.education/" target="_blank">DFTW</a>
 				<a href="#contact">Contact</a>
 				<a href="https://fishouttawater.substack.com/archive?utm_source=menu-dropdown" target="_blank">Blog</a>

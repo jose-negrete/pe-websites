@@ -63,7 +63,7 @@ if ($_GET['font']=='mono'){
 				<div class="projects-body">
 					<?php
 						include("database.php");
-						include("cardGenerator.php");
+						include("functions/cardGenerator.php");
 
 						foreach ($projectsContent as $data) {
 							generateCard($data);
@@ -93,7 +93,7 @@ if ($_GET['font']=='mono'){
 			</div>
 		</section>
 
-		<?php include('contact.php');?>
+		<?php include('modules/contact.php');?>
 	</main>
 	<footer>
 		<div class="inner-column">
