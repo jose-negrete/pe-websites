@@ -118,5 +118,55 @@ $igw = [
         ]
       ]
    ]
-]
+];
+
+$resume = [
+  "jobs" => [
+    [
+      "heading" => [
+        "companyName" => "360 Cities",
+        "jobTitle" => "Data Collector",
+        "yearsEmployed" => "2018 - 2020"
+      ],
+      "description" => "Traveled across the country collecting 360 camera footage. The company was based in England so they weren't privy to ghetto in the states. I'd show up to skid row wearing a backpack with a long extensional pole sticking out that had an expensive 360 camera attached. It was fun and dangerous."
+    ],
+    [
+      "heading" => [
+        "companyName" => "Freelance",
+        "jobTitle" => "Medical Editor",
+        "yearsEmployed" => "2016 - 2019"
+      ],
+      "description" => "I took a 4 day workshop on medical editing so I could freelance and make ok money. The work was super dry. You just reference the AMA manaual of style to format medical documents. No one ever checked my work and whenever I would do a thorogh job of editing, it would usually lead to trouble. It was ok but hard to get steady work."
+    ],
+    [
+      "heading" => [
+        "companyName" => "Global Supplies",
+        "jobTitle" => "Data Entry",
+        "yearsEmployed" => "2013 - 2016"
+      ],
+      "description" => "This super sketchy dude in Sunset Park runs this wacky business where they fulfill Amazon order by just reordering stuff from Wal-Mart. The dude made a fortune. It was just this crummy warehouse full of people copying and pasting customer info from Amazon directly onto Wal-Mart checkout. It was weird and felt wrong but hey, gotta pay the bills."
+    ],
+    [
+      "heading" => [
+        "companyName" => "Freelance",
+        "jobTitle" => "Production Assistant",
+        "yearsEmployed" => "2011 - 2015"
+      ],
+      "description" => "Sort of a mish-mash of TV, film, random events. I would find gigs here and there. It was all over the place. I worked the Met Gala every year which was fun. It was hilarous seeing all these images of celebrities wearing some fancy designer clothing in the same exact spot I was sweating and covered in sawdust an hour before."
+    ]
+  ]
+];
+
+
 ?>
+
+
+
+
+
+
+
+
+
+
+
