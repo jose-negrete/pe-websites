@@ -1,0 +1,239 @@
+{
+	"pages" : {
+		"home" : {
+			"name": "Bike Kitchen",
+			"address": [
+				"650H Florida St",
+				"San Francisco, CA 94410"
+			],
+			"days" : [
+				{
+				"day" : "Monday",
+				"open" : "6:30AM",
+				"close" : "9PM"
+				},
+				{
+				"day" : "Tuesday",
+				"open" : "6AM",
+				"close" : "9PM"
+				},
+				{
+				"day" : "Wednesday",
+				"open" : "6AM",
+				"close" : "9PM"
+				},
+				{
+				"day" : "Thursday",
+				"open" : "6AM",
+				"close" : "9PM"
+				},
+				{
+				"day" : "Friday",
+				"open" : "6AM",
+				"close" : "9PM"
+				},
+				{
+				"day" : "Saturday"
+				},
+				{
+				"day" : "Sunday"
+				}
+			]
+		},
+		"classes" : {
+			"intro" : "Learn how to fix and maintain your bike at our bike maintenance classes. You can learn and ask questions of our volunteer mechanics during our regular open hours, but for more detailed and focused instruction you can take our classes. Classes are scheduled about a month in advance and tickets are sold on our eventbrite site.",
+			"button" : {
+				"linkText" : "View Available Classes",
+				"link" : "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif"
+			},
+			"emailInfo" : "<strong>Class Email List:</strong> If you would like to receive monthly emails announcing our upcoming classes, <a href='#'>join our upcoming class email list</a>. You can unsubscribe yourself at any time.",
+			"disclaimers" : [
+				"Classes are hands on so bring a bike and prepare to get greasy!",
+				"No previous bike knowledge is required or expected, but a willingness to learn and have fun is a must!"
+			],
+			"lessons" : [
+				{
+					"img" : "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif",
+					"title" : "Basic Maintenance",
+					"description" : "This class covers installing and removing tubes and tires (i.e. fixing a flat), installing brake and shift cables, adjusting brakes and gears, chain maintenance."
+				},
+				{
+					"img" : "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif",
+					"title" : "Bearing Maintenance",
+					"description" : "This class covers the installation, overhaul, adjustment and maintenance of the bicycle’s bearing systems (headsets, bottom brackets and hubs). To access these systems you will also learn to remove and replace stems, crank sets, freewheels, and cassettes."
+				},
+				{
+					"img" : "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif",
+					"title" : "Wheelbuilding",
+					"description" : "In this class you will build your own wheel from individual components. Building a wheel with a used rim and spokes adds additional challenges, so a new rim and spokes are required for this class, but a used hub is okay. You can bring your own parts for this class, or purchase a basic wheel kit from the Bike Kitchen."
+				}
+			]
+		},
+		"donations" : {
+			"paragraphs" : [
+				"Part of the Bike Kitchen’s mission is to reuse parts, and we get them from donations. As a bonus, the Bike Kitchen is a federally registered 501(c)(3) organization. All donations made are tax deductible.",
+				"The best way to donate is to bring your bike/bikes/parts by during open hours and show them to any on-duty mechanic. They will assess if it’s something we can absorb at that time. For questions/inquiries about donating, please contact: deming@bikekitchen.org or donations@bikekitchen.org."
+			],
+			"lists" : [
+				{
+					"title" : "Donation Basics",
+					"listItem" : [
+						"We can not accept all bikes and parts donations.",
+						"If you’re not sure if we will take your donation, you can call us ahead of time.",
+						"We do not accept department store or burning man bikes.",
+						"Please do not leave any donations outside of the shop."
+					]
+				},
+				{
+					"title" : "What we need",
+					"listItem" : [
+						"Small steel frames.",
+						"Road wheels in good condition.",
+						"Complete brake caliper and lever sets."
+					]
+				}
+			]
+		},
+		"volunteer" : {
+			"intro" : "Thanks for your interest in volunteering at the Bike Kitchen! We welcome volunteers of any skill level. The Bike Kitchen is a 100% volunteer-run organization — we depend on the generous efforts of volunteers. Your role as a volunteer will be defined by your specific skills and interest, and we regularly have volunteer tasks that require no mechanical experience.",
+			"faq" : [
+				{
+					"heading" : "Why volunteer with us?",
+					"paragraph": "Our shop is open to everybody, regardless of what they can or cannot afford, and some parts or the cost of a membership can be earned through volunteering. 6 hours of volunteer time will get you a one-year membership, and 12 hours will earn you digging rights to build a complete bike. We also offer community service credit for school."
+				},
+				{
+					"heading" : "How do I volunteer?",
+					"paragraph" : "Simply drop into the shop 15 minutes before a shift open hours to start volunteering. We take volunteers on a strictly first come, first served basis. We typically cannot take more than three or four volunteers during any one shift, so arriving at the shop as close to the beginning of a shift as possible is best. Please be prepared to volunteer for a minimum of one hour."
+				},
+				{
+					"heading" : "Can I volunteer as a mechanic?",
+					"paragraph" : "Absolutely! If you are an experienced mechanic, we almost always have a place for you to drop in, regardless of how many other volunteers we have that day. Please visit our wiki page at to read about the mechanic requirements, and feel free to drop into the shop at any time to speak with one of us and jump in."
+				},
+				{
+					"heading" : "I love you guys & I wanna become staff!",
+					"paragraph": "If you are familiar with the shop and are interested in volunteering to become staff, please visit the Becoming Staff section of our Handbook to learn more. In addition to having mechanics, we are also always looking for committed folks to train as a shift greeter. This role is vital to our shop and requires the ability to accurately answer all questions regarding our donations, membership, bike tagging, and parts sale/trading policies, in addition to signing folks in."
+				}
+			],
+			"addendum" : "If you have additional questions about how volunteering works, simply drop into the shop during open hours or email volunteer [at] bikekitchen [dot] org. To learn more about how the organization runs, check out our wiki."
+		},
+		"staff" : {
+			"intro" : "Our friendly volunteer staff are awesome skilled mechanics who dedicate some of their precious time to helping you with your bike. Please be courteous and respectful with everyone. Scroll over a member to find out more about them!",
+			"join": "<a href='#'>Learn more</a> about becoming a staff member.",
+			"roster": [
+				{
+					"name": "De Ming Liu",
+					"img": "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif"
+				},
+				{
+					"name": "David Manning",
+					"img": "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif"
+				},
+				{
+					"name": "Geoff Colburn",
+					"img": "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif"
+				},
+				{
+					"name": "Dan Tan",
+					"img": "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif"
+				},
+				{
+					"name": "Dave Baker",
+					"img": "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif"
+				},
+				{
+					"name": "Louis Roth",
+					"img": "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif"
+				},
+				{
+					"name": "Craig Giudici",
+					"img": "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif"
+				},
+				{
+					"name": "Cy Thompson",
+					"img": "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif"
+				},
+				{
+					"name": "Olfert Kempff",
+					"img": "https://c.tenor.com/qnnVlrKeTAQAAAAC/taco-funny.gif"
+				}
+			]
+		},
+		"programs" : {
+			"info" : [
+				{
+					"heading" : "Adult Membership",
+					"paragraphs": [
+						"Your membership is good for 1 year. You can buy it for $50 or earn it with 6 hours of volunteering. You can drop in for a day use for $6. Membership gives you access to our tools and help from our mechanics during open hours only. The Bike Kitchen expects everyone to respect the space and the volunteers and has the right to refuse access to those who do not regardless of their membership status."
+					]
+				},
+				{
+					"heading" : "Youth Membership",
+					"paragraphs" : [
+						"Those under the age of 18 have access to free membership until they turn 18 years old. You must show some proof of age such as a school ID. Any youth under 14 will require an adult 18 or over to be responsible for them if they are in the shop during any regular or class hours. Find out more about youth membership."
+					]
+				},
+				{
+					"heading" : "Digging Rights",
+					"paragraphs" : [
+						"Using a frame and parts from our used inventory, you can build your own bike with the help of our volunteer mechanics. Digging rights can be purchased ($40) or earned through volunteering (six additional hours). While actively building your bike, you can store it at the Bike Kitchen. This program is open only to Bike Kitchen members.",
+						"Please remember that storing your project with us does not guarantee it’s safety and the Bike Kitchen is not responsible for your bike. If you leave your bike hanging at the shop, please remember to put a tag on it with your name, phone number and date. You must continue working on it within every 2 week period.",
+						"Please update the tag’s date each time you come in to work on the bike."
+					]
+				},
+				{
+					"heading" : "WTF: Women / Trans* / Femme",
+					"paragraphs" : [
+						"WTF night offers women, trans* & femme specific hours to provide a safe and supportive learning environment. We encourage WTF folks of all skill levels to experiment and explore while learning bike mechanics and maintenance in a comfortable atmosphere. Come experience the satisfaction and joy of building, fixing or souping up your own bike; experienced WTF mechanics are available to lend guidance as needed.  WTF is every 2nd and 4th Monday evening from 6:30-9pm.",
+						"Women Trans* Femme (WTF) hours are open to anyone who identifies as female, transgender, femme, genderqueer, trans-masculine, trans-feminine, or feels that their socialization or treatment as a woman, transperson*, femme has impeded their participation in bicycle mechanics.",
+						"Join our Meetup group for the most up to date WTF events!"
+					]
+				},
+				{
+					"heading" : "Why it exists?",
+					"paragraphs" : [
+						"At the Bike Kitchen we try our best to facilitate an inclusive and empowering environment that is friendly and safe for all community members. However, we recognize that sexism and gender discrimination are strong forces that effect women/trans*/femme people in their everyday lives and can also be present during general shop hours at the bike kitchen. We are proud to provide a space where women, trans* and femme folks can celebrate and share their skills amongst each other."
+					]
+				},
+				{
+					"heading" : "Ways to support WTF night",
+					"paragraphs" : [
+						"Respect the space. If you do not identify as a woman, trans* or femme person, please come to the shop during other open hours. T, W, Th 6-9pm, Sat 12-3pm.",
+						"Tell all of your female and trans* friends about WTF night and encourage them to attend!",
+						"Educate yourself, become more aware of women’s and trans* issues."
+					]
+				}
+			]
+		},
+		"mission" : {
+			"info" : [
+				{
+				"heading" : "Our Mission",
+				"paragraphs" : [
+					"Founded in 2003, the Bike Kitchen is a 501(c)(3) non-profit run by volunteers. We provide all the tools and parts you need to fix or build a bicycle. Our staff of volunteer mechanics is available to give advice and answer questions.",
+					"The Bike Kitchen feels that our contributions to the greater SF community should go beyond empowerment through our bicycle services, and that we have a responsibility to aid and support other necessary community non-profit institutions in need."
+					]
+				},
+				{
+					"heading" : "Dignity & Respect Policy",
+					"paragraphs" : [
+						"The core mission of the Bike Kitchen is to teach people of all ages and backgrounds how to repair bicycles. We are intent on promoting a positive culture for wrenching and volunteering in which all members of our community treat each other with dignity and respect. Discrimination on any grounds (gender, religion, age, marital and family status, disability, sexual orientation, race, ethnicity, or immigration status), harassment, sexual harassment, bullying, or intimidation will not be tolerated at the Bike Kitchen.",
+						"The positive culture for wrenching and volunteering at The Bike Kitchen is created by and for our staff members, volunteers, patrons, and other community members. We have a responsibility to promote this positive culture by:",
+						{
+							"listItems" : [
+								"Being accountable for our interactions with each other at the Bike Kitchen",
+								"Wrenching and volunteering collaboratively, collegially, and effectively",
+								"Leading other staff members, volunteers, patrons, and others in promoting a culture of dignity and respect",
+								"Taking timely, relevant action to resolve concerns using the appropriate procedures"
+							]
+						},
+						"Any act or conduct by a harasser is considered to be harassment if it is unwelcome to the recipient and could reasonably be seen as offensive, humiliating, threatening, hostile, or intimidating to the recipient, in relation to one or more of the following characteristics of the recipient: gender, religion, marital or family status, sexual orientation, religion, age, disability, race, ethnicity, or immigration status. Such behavior can take many forms, similar to those of sexual harassment, racial harassment or bullying.",
+						"Sexual harassment includes acts of physical intimacy, or requests for sexual favors or any act or conduct by a harasser, including spoken words, gestures or the production, display or circulation of written words, pictures or other material. The unwanted nature of sexual harassment distinguishes it from flirtatious or sexual behavior, which is entered into freely and mutually. It is the damaging impact of the unwanted behavior on the recipient, not the intention of the harasser, which counts. The impact of sexual harassment is taken into account when cases of sexual harassment are investigated.",
+						"Bullying is repeated inappropriate behavior, direct or indirect, whether verbal, physical or otherwise, conducted by one or more persons against one or more others, which could reasonably be regarded as undermining the individual’s right to dignity and respect. An isolated incident of the behavior described in this definition may be an affront to your dignity but is not considered to be bullying."
+						],
+					}
+				]
+			}
+		}
+
+}
+

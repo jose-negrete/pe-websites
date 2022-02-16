@@ -1,9 +1,8 @@
 <?php
-
-	//include('database.php');
-
 	$siteData = file_get_contents('database.json');
 	$data = json_decode($siteData, true);
+
+
 
 	if (isset($_GET['page'])){
 		$page = $_GET['page'];

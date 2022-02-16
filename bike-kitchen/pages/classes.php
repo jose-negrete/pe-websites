@@ -11,7 +11,7 @@
 <section>
 	<p><?=$classes['intro']?></p>
 
-	<a href='<?=$link?>'><?=$linkText?></a>
+	<a href='?page=<?=$link?>'><?=$linkText?></a>
 
 	<p><?=$classes['emailInfo']?></p>
 

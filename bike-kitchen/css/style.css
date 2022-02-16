@@ -31,3 +31,19 @@ nav {
   gap: 10px;
 }
 
+.preview {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  border: 1px solid black;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.preview h3 {
+  color: dimgrey;
+}
+
+.preview h4 {
+  color: maroon;
+}
