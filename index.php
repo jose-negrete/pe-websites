@@ -8,8 +8,23 @@
 	<title>J. Negrete - Developer / Designer</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
+<?php 
 
-<body>
+
+// Sets fontType variable to an empty value.
+$fontType = '';
+
+// Checks the value of the key for 'font' within the superglobal variable and assigns it to the fontType variable.
+if ($_GET['font']=='mono'){
+	$fontType = 'monospace';
+} else {
+	$fontType = 'sans-serif';
+}
+
+?>
+
+<!-- Using the fontType value for the class attribute -->
+<body class="<?=$fontType?>">
 	<header class="site-header">
 		<div class="inner-column">
 			<nav class="site-menu">
@@ -19,6 +34,14 @@
 				<a href="#blog">Blog</a>
 			</nav>
 		</div>
+
+		<!-- Sets anchor links that, when clicked will become the value for the 'font' key in the superglobal variable. -->
+		<div class="buttons">
+		<a href="?font=mono">Mono</a>
+
+		<a href="?font=sans-serif">Sans-Serif</a>
+	</div>
+
 	</header>
 
 	<main>
@@ -26,6 +49,7 @@
 			<div class="inner-column">
 				<div class="about-content">
 					<p>Jose Negrete is a web developer and UX designer who helps small businesses and non-profits with bringing their ideas to the next level by using the most dangerous tool known to modern man (the web). Unlike my competitors, I have an adaptive skill set that is valuable at every stage of the&nbsp;design&nbsp;process.</p>
+					
 				</div>
 			</div>
 		</section>
@@ -39,7 +63,7 @@
 				<div class="projects-body">
 					<?php
 						include("database.php");
-						include("cardGenerator.php");
+						include("functions/cardGenerator.php");
 
 						foreach ($projectsContent as $data) {
 							generateCard($data);
@@ -69,25 +93,7 @@
 			</div>
 		</section>
 
-		<section id="contact">
-			<div class="inner-column">
-				<header>
-						<h1>Contact</h1>
-				</header>
-
-				<address>
-					<div class="email">
-						<h2>Email:</h2>
-						<a href="mailto:jnegrete.nyc@gmail.com">jnegrete.nyc@gmail.com</a>
-					</div>
-
-					<div class="phone">
-						<h2>Phone:</h2>
-						<a href="#">(555)555-5555</a>
-					</div>
-				</address>
-			</div>
-		</section>
+		<?php include('modules/contact.php');?>
 	</main>
 	<footer>
 		<div class="inner-column">

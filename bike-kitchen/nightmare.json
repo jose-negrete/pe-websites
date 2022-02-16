@@ -1,0 +1,29 @@
+{
+	"list": [
+		{
+		"id" : 0,
+		"title": "Basic Maintenance Class",
+		"date": "Fri, Feb 21st, 5:45pm",
+		"price": "$55",
+		"img" : "https://www.sefiles.net/merchant/5359/images/site/IMG_5371-slimC1.JPG?t=1565908983327",
+		"description" : [
+			"If you are new to maintaining your bicycle and also want to know the best ways to keep your machine out of the repair shop, this is the class for you. All it takes is a little love and maintenance to keep your ride in peak condition. Come get your hands greasy with us!",
+			"Our hands-on Basic Bike Maintenance class will give you the skills to fix flats, adjust brakes and gears, maintain your chain, and perform minor adjustments that can have a significant impact on your ride quality. Not only will you learn how to make adjustments to your own bike, you will develop an understanding of how these components function and work."
+		]
+		},
+		{
+		"id" : 1,
+		"title": "Bottom Bracket & Headset Class",
+		"date": "Mon, March 4th, 6:00pm",
+		"price": "$25",
+		"img" : "https://www.sefiles.net/merchant/5359/images/site/IMG_5371-slimC1.JPG?t=1565908983327",
+		"description" : [
+			"Dirt and grime doesn't just coat your external components, it also makes its way into your internal components causing wear to your bearings. Learn how to take apart, inspect and clean your headset and bottom bracket.",
+			"In one class session we will cover the following topics:",
+			"<li>Installing and removing tubes and tires (i.e. fixing a flat)</li>",
+			"<li>Installing brake and shift cables</li>",
+			"<li>Adjusting brakes and gears</li>"
+		]
+		}
+	]
+}

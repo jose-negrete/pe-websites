@@ -1,0 +1,66 @@
+@import "meyer-reset.css";
+@import "setup.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  cursor: inherit;
+}
+
+html {
+  cursor: url("../arrow.png") 0 0, auto;
+}
+
+body {
+  padding: 10px;
+}
+
+.inner-column {
+  margin: auto;
+
+  max-width: 800px;
+}
+
+.charset-content {
+  background-color: red;
+  border-radius: 10px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row;
+  justify-items: center;
+  padding: 20px;
+}
+
+li {
+
+}
+
+li button {
+  border: none;
+  background-color: transparent;
+  padding: 20px;
+  font-size: 32px;
+  color: white;
+  transition: 0.5s;
+ 
+}
+
+
+li button:hover {
+  background-color: white;
+  color: black;
+  z-index: 99;
+  border-radius: 10px;
+  transform: scale(1.4);
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  transition: 0.5s cubic-bezier(.47,2.64,.41,.8);
+
+}
+
+li button:focus {
+  border: gold 2px solid;
+}
+
+

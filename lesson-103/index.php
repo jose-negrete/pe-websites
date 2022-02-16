@@ -23,6 +23,14 @@
 				include "cog.php"; //background-image
 			;?>	
 		</section>
+
+		<section class="no2">
+			<?php 
+				include "module-container.php";
+				include "cog.php"; //background-image
+			;?>	
+		</section>
+		
 	</main>
 
 	<footer>
