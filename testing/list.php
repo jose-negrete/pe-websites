@@ -1,4 +1,4 @@
-<?php //include('car-data.php'); ?>
+<?php include('car-data.php'); ?>
 
 <h1>Auto Zone</h1>
 
