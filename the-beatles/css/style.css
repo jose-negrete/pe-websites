@@ -1,0 +1,56 @@
+@import "meyer-reset.css";
+@import "setup.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Site-Wide Crap */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+/* Titles */
+
+h1 {
+  font-weight: 700;
+  font-size: 2em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Main */ 
+
+
+
+/* Photos */
+picture {
+  max-width: 300px;
+}
+
+ul li picture {
+  max-width: 200px;
+}
+
+/* Body text */
+
+p {
+  margin-top: 50px;
+  line-height: 1.5;
+}
+
+/* Form */
+
+form {
+  max-width: 300px;
+}
+
+form .field {
+  display: flex;
+  flex-direction: column;
+}
+
+form * {
+  padding: 10px;
+  border: 1px solid black;
+}
+
