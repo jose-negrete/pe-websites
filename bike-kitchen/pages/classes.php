@@ -2,49 +2,26 @@
 	$classes = $data['pages']['classes'];
 	$link = $classes['button']['link'];
 	$linkText = $classes['button']['linkText'];
-
 	$disclaimers = $classes['disclaimers'];
 	$lessons = $classes['lessons'];
-
+	$emailInfo = $classes['emailInfo'];
+	$img = $classes['img'];
 ?>
 
 <section>
 	<p><?=$classes['intro']?></p>
 
-	<a href='?page=<?=$link?>'><?=$linkText?></a>
+	<?php linkMaker($link, $linkText); ?>
 
-	<p><?=$classes['emailInfo']?></p>
+	<p><?=$emailInfo?></p>
 
-	<?php
-		foreach($disclaimers as $disclaimer){
-			echo "<h3>$disclaimer</h3>";
-		}
+	<?php 
+		spitHTML($disclaimers, "h3"); 
+		pictureMaker($img);
 	?>
+
 </section>
 
 <section>
-
-	<?php
-
-		foreach($lessons as $lesson){
-			$img = $lesson['img'];
-			$title = $lesson['title'];
-			$description = $lesson['description'];
-
-
-			echo "
-			<div>
-				<picture>
-					<img src='$img'
-				</picture>
-
-				<h4>$title</h4>
-
-				<p>$description</p>
-			</div>";
-
-		}
-		
-	?>
-
+	<?php moduleMaker($lessons); ?>
 </section>

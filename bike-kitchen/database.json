@@ -14,8 +14,9 @@
                 [
                     {
                         "day": "Monday",
+                        "addInfo": "Women/Trans/Fem nights on 2nd and 4th Mondays",
                         "open": "6:30AM",
-                        "close": "9PM"
+                        "close": "9PM"  
                     },
                     {
                         "day": "Tuesday",
@@ -33,17 +34,31 @@
                         "close": "9PM"
                     },
                     {
-                        "day": "Friday",
-                        "open": "6AM",
-                        "close": "9PM"
+                        "day": "Friday"
                     },
                     {
-                        "day": "Saturday"
+                        "day": "Saturday",
+                        "open": "12PM",
+                        "close": "3PM"
                     },
                     {
                         "day": "Sunday"
                     }
-                ]
+                ],
+                "donations" : 
+                    {
+                        "heading" : "Donations",
+                        "body" : "Donations are accepted at the hours listed above. If the hours listed above does not work for you, you can arrange a donation drop-off appointment by contacting <a href='mailto:deming@bikekitchen.org'>deming@bikekitchen.org</a>Thank you for your support!"
+                    },
+                "about": 
+                    {
+                        "heading": "About the Bike Kitchen",
+                        "body": 
+                            [
+                                "The Bike Kitchen teaches people of all ages and backgrounds how to repair bicycles. The Bike Kitchen promotes personal development and provides leadership opportunities. Operating as a cooperative shop, we provide affordable ways to acquire and maintain a bike, encourage re-use and recycling, and work with community groups to get more people on bicycles.", 
+                                "Founded in 2003, the Bike Kitchen is a 501(c)(3) non-profit run by volunteers. We provide all the tools and parts you need to fix or build a bicycle. Our staff of volunteer mechanics is available to give advice and answer questions."
+                            ]
+                    }
             },
             "classes":
             {
@@ -76,14 +91,15 @@
                         "title": "Wheelbuilding",
                         "description": "In this class you will build your own wheel from individual components. Building a wheel with a used rim and spokes adds additional challenges, so a new rim and spokes are required for this class, but a used hub is okay. You can bring your own parts for this class, or purchase a basic wheel kit from the Bike Kitchen."
                     }
-                ]
+                ],
+                "img" : "http://bikekitchen.org/wp-content/uploads/2012/08/394273_10150470289569506_192847620_n.jpg"
             },
             "donations":
             {
                 "paragraphs":
                 [
                     "Part of the Bike Kitchen’s mission is to reuse parts, and we get them from donations. As a bonus, the Bike Kitchen is a federally registered 501(c)(3) organization. All donations made are tax deductible.",
-                    "The best way to donate is to bring your bike/bikes/parts by during open hours and show them to any on-duty mechanic. They will assess if it’s something we can absorb at that time. For questions/inquiries about donating, please contact: deming@bikekitchen.org or donations@bikekitchen.org."
+                    "The best way to donate is to bring your bike/bikes/parts by during open hours and show them to any on-duty mechanic. They will assess if it’s something we can absorb at that time. For questions/inquiries about donating, please contact: <a href='mailto:deming@bikekitchen.org'>deming@bikekitchen.org</a> or <a href='mailto:donations@bikekitchen.org'>donations@bikekitchen.org</a>."
                 ],
                 "lists":
                 [
@@ -110,7 +126,7 @@
             },
             "volunteer":
             {
-                "intro": "hello",
+                "intro": "Thanks for your interest in volunteering at the Bike Kitchen! We welcome volunteers of any skill level. The Bike Kitchen is a 100% volunteer-run organization — we depend on the generous efforts of volunteers. Your role as a volunteer will be defined by your specific skills and interest, and we regularly have volunteer tasks that require no mechanical experience.",
                 "faq":
                 [
                     {
@@ -182,21 +198,21 @@
                 [
                     {
                         "heading": "Adult Membership",
-                        "paragraphs":
+                        "paragraph":
                         [
                             "Your membership is good for 1 year. You can buy it for $50 or earn it with 6 hours of volunteering. You can drop in for a day use for $6. Membership gives you access to our tools and help from our mechanics during open hours only. The Bike Kitchen expects everyone to respect the space and the volunteers and has the right to refuse access to those who do not regardless of their membership status."
                         ]
                     },
                     {
                         "heading": "Youth Membership",
-                        "paragraphs":
+                        "paragraph":
                         [
                             "Those under the age of 18 have access to free membership until they turn 18 years old. You must show some proof of age such as a school ID. Any youth under 14 will require an adult 18 or over to be responsible for them if they are in the shop during any regular or class hours. Find out more about youth membership."
                         ]
                     },
                     {
                         "heading": "Digging Rights",
-                        "paragraphs":
+                        "paragraph":
                         [
                             "Using a frame and parts from our used inventory, you can build your own bike with the help of our volunteer mechanics. Digging rights can be purchased ($40) or earned through volunteering (six additional hours). While actively building your bike, you can store it at the Bike Kitchen. This program is open only to Bike Kitchen members.",
                             "Please remember that storing your project with us does not guarantee it’s safety and the Bike Kitchen is not responsible for your bike. If you leave your bike hanging at the shop, please remember to put a tag on it with your name, phone number and date. You must continue working on it within every 2 week period.",
@@ -205,7 +221,7 @@
                     },
                     {
                         "heading": "WTF: Women / Trans* / Femme",
-                        "paragraphs":
+                        "paragraph":
                         [
                             "WTF night offers women, trans* & femme specific hours to provide a safe and supportive learning environment. We encourage WTF folks of all skill levels to experiment and explore while learning bike mechanics and maintenance in a comfortable atmosphere. Come experience the satisfaction and joy of building, fixing or souping up your own bike; experienced WTF mechanics are available to lend guidance as needed.  WTF is every 2nd and 4th Monday evening from 6:30-9pm.",
                             "Women Trans* Femme (WTF) hours are open to anyone who identifies as female, transgender, femme, genderqueer, trans-masculine, trans-feminine, or feels that their socialization or treatment as a woman, transperson*, femme has impeded their participation in bicycle mechanics.",
@@ -214,14 +230,14 @@
                     },
                     {
                         "heading": "Why it exists?",
-                        "paragraphs":
+                        "paragraph":
                         [
                             "At the Bike Kitchen we try our best to facilitate an inclusive and empowering environment that is friendly and safe for all community members. However, we recognize that sexism and gender discrimination are strong forces that effect women/trans*/femme people in their everyday lives and can also be present during general shop hours at the bike kitchen. We are proud to provide a space where women, trans* and femme folks can celebrate and share their skills amongst each other."
                         ]
                     },
                     {
                         "heading": "Ways to support WTF night",
-                        "paragraphs":
+                        "paragraph":
                         [
                             "Respect the space. If you do not identify as a woman, trans* or femme person, please come to the shop during other open hours. T, W, Th 6-9pm, Sat 12-3pm.",
                             "Tell all of your female and trans* friends about WTF night and encourage them to attend!",
@@ -263,6 +279,13 @@
                         ]
                     }
                 ]
+            },
+            "contact": {
+                "email": 
+                {
+
+                    "text" : "for"
+                }
             }
         }
     }

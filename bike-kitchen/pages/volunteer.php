@@ -1,16 +1,12 @@
 <?php
 	$volunteer = $data['pages']['volunteer'];
+	$faq = $volunteer['faq'];
+	$intro = $volunteer['intro'];
+	$addendum = $volunteer['addendum'];
 ?>
 
-<p><?=$volunteer['intro']?></p>
+<p><?=$intro?></p>
 
-<?php 
-	foreach($volunteer['faq'] as $faq) {
-		$heading = $faq['heading'];
-		$paragraph = $faq['paragraph'];
-		echo "<h3>$heading</h3>";
-		echo "<p>$paragraph</p>";
-	}
-?>
+<?php arrayOfObjects($faq); ?>
 
-<h4><?=$volunteer['addendum']?></h4>
+<h4><?=$addendum?></h4>
