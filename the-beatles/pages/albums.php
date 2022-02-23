@@ -36,7 +36,10 @@
 ?>
 <main>
 	<div class="inner-column">
-		<h1>Welcome to the Record Shoppe</h1>
+		<h1>The Record Shoppe</h1>
+		<picture class="form-photo">
+			<img src='images/form-photo.png'>
+		</picture>
 		<form method='POST'>
 			<h2>Order Form</h2>
 			<div class="field">

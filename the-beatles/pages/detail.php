@@ -7,24 +7,30 @@
 
 		if ($getId == $memberId){
 			$name = $member['first'] . " " . $member['last'];
-			$image = $member['image'];
+			$imageOne = $member['image'][0];
+			$imageTwo = $member['image'][1];
 			$bio = $member['bio'];
-
 		}
 	}
 
-	echo $getId;
 ?>
 
 <main>
 	<div class="inner-column">
 		<h1><?=$name?></h1>
 		<picture>
-			<img src='<?=$image?>'>
+			<img src='<?=$imageOne?>'>
 		</picture>
 		<?php 
-			foreach($bio as $paragraph){
-				echo "<p>$paragraph</p>";
+			for ($i = 0; $i <= count($bio)-1; $i++){
+
+				if ($i == 2){
+					echo "
+					<picture class='damnyou'>
+						<img src=$imageTwo>
+					</picture>";
+				}
+				echo "<p>$bio[$i]</p>";
 			}
 		?>
 	</div>

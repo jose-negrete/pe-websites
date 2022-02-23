@@ -9,7 +9,7 @@
 		<?php 
 			echo "<ul>";
 			foreach($members as $member){
-				$image = $member['image'];
+				$imageOne = $member['image'][0];
 				$name = $member['first'] . " " . $member['last'];
 				$instrument = ucfirst($member['instrument']);
 				$birth = date("M d, Y", strtotime($member['born']));
@@ -18,7 +18,7 @@
 				echo "
 				<li>
 					<picture>
-						<img src='$image'>
+						<img src='$imageOne'>
 					</picture>
 					<h2>
 						<strong>Name:</strong>

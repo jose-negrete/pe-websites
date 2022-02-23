@@ -1,56 +1,197 @@
 @import "meyer-reset.css";
 @import "setup.css";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Shizuru&display=swap');
 
 /* Site-Wide Crap */
 
+:root {
+  --black: #490104;
+  --wheat: #FDCDAC;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  background-color: var(--wheat);
+  color: var(--black);
+  padding-bottom: 100px;
+}
+
+.inner-column {
+  max-width: 900px;
+  margin: auto;
 }
 
 /* Titles */
 
 h1 {
-  font-weight: 700;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-top: 50px;
   margin-bottom: 50px;
+  font-family: 'Shizuru', cursive;
+  text-align: center;
 }
 
-/* Main */ 
+
+/* Active Header */
+
+nav a:hover {
+  border-bottom: 4px double rgba(73,1,4,0.2);
+}
+
+nav a, ul li a, form h2, form button {
+  font-size: 2em;
+  border-bottom: 4px double rgba(73,1,4,0);
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+nav a.active {
+  border-bottom: 4px double rgba(73,1,4,1);
+}
 
 
+nav {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--wheat);
+}
 
 /* Photos */
 picture {
-  max-width: 300px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Band Member Cards */
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+ul li {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li * {
+}
+
+ul li :is(h2, h3, h4) {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1em;
+  max-width: 80%;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul li strong {
+  font-weight: 400;
+  font-size: 1.2em;
+  flex-basis: 48%;
+}
+
+ul li span {
+  flex-basis: 48%;
+  font-weight: 300;
 }
 
 ul li picture {
-  max-width: 200px;
+}
+
+ul li a, form button {
+  text-align: center;
+  margin-top: 40px;
+  background-color: var(--black);
+  color: var(--wheat);
+  padding: 10px;
+  border-bottom: none;
+  max-width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.8em;
+  letter-spacing: 0.2em;
+
 }
 
 /* Body text */
 
 p {
   margin-top: 50px;
-  line-height: 1.5;
+  line-height: 2;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main {
+  padding: 10px;
 }
 
 /* Form */
 
+.form-photo, .damnyou {
+  border: 4px double var(--black);
+}
+
+form h2 {
+  text-align: center;
+}
+
+form h3 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
 form {
+  margin-top: 50px;
   max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 form .field {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 form * {
-  padding: 10px;
-  border: 1px solid black;
+  padding: 10px;  
+}
+
+select, input {
+  border: 1px solid var(--black);
+  box-shadow: 3px 3px var(--black);
+}
+
+form button {
+  max-width: 100%;
+  border: none;
+}
+
+.damnyou {
+  margin-top: 40px;
 }
 
