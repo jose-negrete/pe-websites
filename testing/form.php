@@ -17,7 +17,9 @@
 
 	<div class="field">
 		<label>Select range</label>
-		<input type="range" min="1" max="5" name="range">
+		<input type="range" 
+			min="1" max="5" 
+			name="range">
 	</div>
 
 	<button type="submit" name="button">Submit</button>
