@@ -1,7 +1,4 @@
 <?php 
-
-
-
 	$siteData = file_get_contents('database.json');
 	$data = json_decode($siteData, true);
 
@@ -10,7 +7,6 @@
 	} else {
 		$page = 'home';
 	}
-
 ?>
 
 <!DOCTYPE html>
@@ -25,8 +21,6 @@
 	<?php 
 	   include('header.php');
 		include('pages/' . $page . '.php');
-	?>
-
-	
+	?>	
 </body>
 </html>
