@@ -1,0 +1,105 @@
+{
+	"about": {
+		"heading": "Jose Negrete is a web developer and UX designer based in San Francisco, CA.",
+		"body": "He wants to help small businesses and non-profits with bringing their ideas to the next level by using the most dangerous tool known to modern man (the web). Unlike his competitors, he has an adaptive skill set that is valuable at every stage of the design process."
+	},
+	"projects": {
+		"heading": "Oh cool, you made it to the 2nd module. You must be somewhat interested.",
+		"body": "This is where Jose proves his self-worth. Click a project, any project. See it in action by clicking the website. Study the code by using the inspector and/or visiting my GitHub. Get a deeper insight into my thought process by looking at the case studies. Explore!",
+		"list": [
+			{
+				"id": 1,
+				"heading": "Intergalactic Plant World",
+				"body": "I built a website for a succulent shop ran by hippies that would appeal to the general public without alienating their already established clientele.",
+				"links": [
+					{
+						"title": "Live Site",
+						"link": "https://peprojects.dev/alpha-3/igw"
+					},
+					{
+						"title": "Case Study",
+						"link": "https://peprojects.dev/alpha-3/jose/case-studies/igw.php"
+					}
+				]
+			},
+			{
+				"id": 2,
+				"heading": "The Alpha-Net",
+				"body": "I redesigned the student directory for Alpha-3 at Perpetual Education so that an outsider would know what this is and would be interested to learn more.",
+				"links": [
+					{
+						"title": "Live Site",
+						"link": "https://peprojects.dev/alpha-3/lesson-99"
+					},
+					{
+						"title": "Case Study",
+						"link": "https://peprojects.dev/alpha-3/jose/case-studies/alpha-net.php"
+					}
+				]
+			},
+			{
+				"id": 3,
+				"heading": "Super Responsive Layout&nbsp;Challenge",
+				"body": "I put my design skills to the test by building a website with a lot of moving parts that adapts to every screen size while retaining cleanliness.",
+				"links": [
+					{
+						"title": "Live Site",
+						"link": "https://peprojects.dev/alpha-3/super-responsive-layout-challenge"
+					},
+					{
+						"title": "Case Study",
+						"link": "#"
+					}
+				]
+			}
+		]
+	},
+	"blog": {
+		"heading": "You scrolled this far so you might as well keep on reading. Speaking of reading...",
+		"body": "Jose writes... a lot. In fact he's documented his whole learning experience. They say everyone enjoys a train wreck. Well here lies many. Just when you thought the bar couldn't get any lower, leave it to Jose. What is a web developer, really? Jose walks that line.",
+		"list": [
+			{
+				"heading": "Perpetual Education: Week&nbsp;13",
+				"body": "Jose gets turnt while in the early stages of the design process and as a result, it totally backfires and forces him to reexamine his life choices.",
+				"link": "https://fishouttawater.substack.com/p/perpetual-education-week-13"
+			},
+			{
+				"heading": "Perpetual Education: Week&nbsp;12",
+				"body": "Jose does a ridiculous amount of research in order to design a legit looking e-commerce site for electric bikes and executes it with unflagging fervor.",
+				"link": "https://fishouttawater.substack.com/p/perpetual-education-week-12"
+			},
+			{
+				"heading": "Perpetual Education: Week&nbsp;11",
+				"body": "Jose uses his newly acquired skills of basic design principles and applies it to an already existing site so that it makes sense to the outside world.",
+				"link": "https://fishouttawater.substack.com/p/perpetual-education-week-11"
+			}
+		]
+	},
+	"footer": [
+		{
+			"title": "CodePen",
+			"link": "https://codepen.io/j-negrete"
+		},
+		{
+			"title": "GitHub",
+			"link": "https://github.com/jose-negrete"
+		},
+		{
+			"title": "Substack",
+			"link": "https://fishouttawater.substack.com/"
+		},
+		{
+			"title": "Reddit",
+			"link": "https://www.reddit.com/user/purpleplatypusparty"
+		},
+		{
+			"title": "dev.to",
+			"link": "https://dev.to/jnegrete"
+		},
+		{
+			"title": "CodeNewbie",
+			"link": "https://community.codenewbie.org/jnegrete"
+		}
+
+	]
+}
