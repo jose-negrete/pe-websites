@@ -30,7 +30,7 @@
 							<h2>$heading</h2>
 							<p>$body</p>
 							<div class='links'>
-								<a href='$link'>Read More</a>
+								<a href='$link' target='_blank'>Read More</a>
 							</div>
 						</li>";
 					}

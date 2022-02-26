@@ -13,12 +13,8 @@
 				"body": "I built a website for a succulent shop ran by hippies that would appeal to the general public without alienating their already established clientele.",
 				"links": [
 					{
-						"title": "Live Site",
-						"link": "https://peprojects.dev/alpha-3/igw"
-					},
-					{
 						"title": "Case Study",
-						"link": "https://peprojects.dev/alpha-3/jose/case-studies/igw.php"
+						"link": "?page=case-study&id=igw"
 					}
 				]
 			},
@@ -28,12 +24,8 @@
 				"body": "I redesigned the student directory for Alpha-3 at Perpetual Education so that an outsider would know what this is and would be interested to learn more.",
 				"links": [
 					{
-						"title": "Live Site",
-						"link": "https://peprojects.dev/alpha-3/lesson-99"
-					},
-					{
 						"title": "Case Study",
-						"link": "https://peprojects.dev/alpha-3/jose/case-studies/alpha-net.php"
+						"link": "?page=case-study&id=alpha"
 					}
 				]
 			},
@@ -42,10 +34,6 @@
 				"heading": "Super Responsive Layout&nbsp;Challenge",
 				"body": "I put my design skills to the test by building a website with a lot of moving parts that adapts to every screen size while retaining cleanliness.",
 				"links": [
-					{
-						"title": "Live Site",
-						"link": "https://peprojects.dev/alpha-3/super-responsive-layout-challenge"
-					},
 					{
 						"title": "Case Study",
 						"link": "#"
@@ -101,5 +89,81 @@
 			"link": "https://community.codenewbie.org/jnegrete"
 		}
 
+	],
+	"caseStudies": [
+		{
+			"id": "igw",
+			"heading": "Intergalactic Plant World",
+			"goals": {
+					"heading": "Goals",
+					"paragraphs": [
+						"Appeal to the general public without alienating their niche market (hippies).",
+						"To let the public know they’re open for direct sales to customers as well as sales to other shops.",
+						"To send the message that this a friendly place to hang out and soak in the vibes."
+					]
+
+				},
+			"research": {
+				"heading": "Research",
+				"paragraphs": [
+					"I studied the sites of their competitors so I could find themes and make unique design choices. I quickly found that this shop wasn't at all like the others — but what they do have is an eccentric story and business model. One that doesn't really mesh well with your classic e-commerce site. Since they didn’t plan on doing any online sales and didn’t even have a product list I figured, why not just tell a story and use extremely effective images. This got us on the right track to accomplishing our goals."
+				]
+			},
+			"design": {
+				"heading": "Design",
+				"paragraphs": [
+					"For the logo I wanted to create something that was a nod to hippie culture without being explicit. I came across this cool skull drawing on etsy that matched perfectly. Even had succulents sticking out of it. Doesn't even have to say the company name. This will be something that locals would use as a bumper sticker.",
+					"To find a font for the header I took a screen shot of each google font I found interesting and would place it next to the skull to see what fit best. Megrim was the obvious winner because it had a futuristic look (which looks great for words like intergalactic and world) and the A's and W's had large open counters and apertures that reminded me of those diamond-shaped planters that are popular for housing succulents."
+				]
+			},
+			"code": {
+				"heading": "Code",
+				"paragraphs": [
+					"For the header I used a cool css property called filter to invert the colors. Also added a shadow to the to the text. When you hover over the links in the navigation it shows a bunch of red dotted lines. This is the border-property. I had to make so the border changes from zero to full opacity when you hover so that it doesn’t push the rest of the content every time it appears. To keep the design cohesive, I also used red dots to break up the sections.",
+					"Since this is a fairly simple page I only needed to design for 2 different screen sizes. I made it so on small screen sizes the images connect but when you expand the page it disconnects them and gives the image rounded corners adds a subtle shadow."
+				]
+			}
+			
+		},
+		{
+			"id": "alpha",
+			"heading": "The Alpha-Net",
+			"goals": {
+				"heading": "Goals",
+				"paragraphs": [
+					"Implement basic design principles I’ve recently learned.",
+					"Dynamically share and store data for each student with PHP.",
+					"Make this site interesting to an outsider."
+				]
+			},
+			"research": {
+				"heading": "Research",
+				"paragraphs": [
+					"So there’s this thing called the AlphaNet. This is a student directory. It’s pretty basic. Just some cards with their name, maybe an image, and some info.For the version on the main site we styled all our cards individually.",
+					"For school I had to create my own version of the AlphaNet where I implement things I’ve learned so far in the course like generating HTML with PHP, having a cohesive design, and a bunch of other stuff."
+				]
+			},
+			"design": {
+				"heading": "Design",
+				"paragraphs": [
+					"I decided to keep it simple with 2 colors. I wanted something that would get a passing grade on the contrast checker without being super boring and bland.",
+					"I think my favorite css property is mix-blend-mode. I used the lighten property on all the images. Just connects the images to the content. When an image is untreated it looks kind of out of place to me. Allows you to use more colors and get a little weirder. Also lots of happy mistakes since I don’t know all the property yet. The images with the lightened blend-mode gave it this 70s yearbook sort of vibe that I liked.",
+					"Since I was going for that retro vibe, I decided to use a display font for the headers. I thought shrikhand blended in well with the style that’s already somewhat established. Kept the rest basic. Roboto for the blurb and monospace for the links.",
+					"Another thing to consider was that no one outside of PE has any clue what the AlphaNet is. We need some information at the top of the page. Threw together some quick copy and problem solved.",
+					"The card content being in a column created some problems. I decided to make it responsive so that the column layout remains on the small screen sizes, then changes to a row at a larger viewport sizes. Looks a bit nicer."
+				]
+			},
+			"code": {
+				"heading": "Code",
+				"paragraphs": [
+					"I decided to stored all the student information as objects in a JSON file. Should be easy to read and understand the key/value pairs. Imported that data from the JSON and used a shuffle function so that the order in which the objects are read are randomized on reload.",
+					"To make life a little easier and php a little less uglier, I saved all the values from the objects to their own variables.",
+					"I used a foreach loop to generate the html for all the cards. Just have to place the variables in the right spot and it’ll dynamically create all the cards without having to code every single one. If I just added another object to the JSON file and it’ll generate like the others. EZ-PZ.",
+					"In case a student failed to add a description or text content for their button, I created an if statement that would generate default strings. Also If the description is super long, it can make the other cards look weird when they’re in a row. I needed to set a character limit for the description so I created an if statement with some library functions. Used strlen() function checks the string length (duh). Also used substr() function which takes in a string as an argument and an index number to signify where you want the display of characters to start and end.",
+					"I wanted to see if I could generate an id with an if statement inside a foreach loop for Derek. Ran into some issues with the variables not working. Lots of trial and error. Eventually got it in a working state. Now when you click Derek’s link in the intro paragraph at the top of the page it will scroll down to his card. I’m a freaking wizard."
+				]
+			}
+		}
+			
 	]
 }

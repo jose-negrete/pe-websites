@@ -1,7 +1,7 @@
 <header>
 	<div class="inner-column">
 		<nav>
-			<a href="../">
+			<a href="?page=home">
 				<picture>
 					<img src="images/icon.svg">
 				</picture>

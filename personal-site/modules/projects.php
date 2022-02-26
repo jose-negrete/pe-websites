@@ -38,7 +38,7 @@
 							$hyperLink = $link['link'];
 
 							echo "
-							<a href='$hyperLink'>$title</a>";
+							<a href='$hyperLink' target='_blank'>$title</a>";
 						}
 
 						echo 	"

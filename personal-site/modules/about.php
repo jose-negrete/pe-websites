@@ -15,6 +15,7 @@
 			</div>
 	
 			<picture class="big-name">
+				<!-- Remove includes and add the SVG using the <img> tag instead dimwit. -->
 				<?php include('images/big-name.svg') ;?>
 			</picture>
 	
