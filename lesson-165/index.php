@@ -1,12 +1,11 @@
-<?php 
+
+<?php
+
 	$siteData = file_get_contents('database.json');
 	$data = json_decode($siteData, true);
 
-	if( isset($_GET['page']) ){
-		$page = $_GET['page'];
-	} else {
-		$page = 'home';
-	}
+	include('functions.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -14,13 +13,24 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?=ucfirst($page)?> – The Beatles</title>
+	<title><?=$page?></title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<?php 
-	   include('header.php');
-		include('pages/' . $page . '.php');
-	?>	
+	<header>
+		<?php include('header.php') ?>
+	</header>
+
+	<main>
+		<?php 
+
+			
+			include('page.php'); 
+			
+			
+		?>
+	</main>
+
 </body>
 </html>

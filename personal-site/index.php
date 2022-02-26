@@ -1,47 +1,32 @@
-<?php
-
+<?php 
 	$siteData = file_get_contents('database.json');
 	$data = json_decode($siteData, true);
 
-	include('functions.php');
-
-	if (isset($_GET['page'])){
+	if( isset($_GET['page']) ) {
 		$page = $_GET['page'];
 	} else {
 		$page = 'home';
 	}
-
-
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?=ucfirst($page)?> — San Francisco Bike Kitchen</title>
+	<link rel="icon" href="images/icon.svg" type="image/svg+xml">
+	<title>J. Negrete — Developer / Designer</title>
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-	This is the <?=$page?> page.
+	<?php include('modules/header.php'); ?>
 
-	<?php include('pages/header.php');?>
-
-	<!-- main -->
 	<main>
-		<div class="inner-column">
-			<?php
-				if ($page){
-					include("pages/" . $page . ".php");
-				}
-			?>
-		</div>
+		<?php include('pages/' . $page . '.php'); ?>
+
 	</main>
-
-
-	<!-- footer -->
+	<?php include('modules/footer.php'); ?>
 	
 </body>
 </html>

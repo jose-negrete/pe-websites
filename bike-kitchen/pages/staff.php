@@ -1,20 +1,14 @@
-<?php $staff = $data['pages']['staff']; ?>
+<?php 
+	$staff = $data['pages']['staff']; 
+	$intro = $staff['intro'];
+	$join = $staff['join'];
+	$roster = $staff['roster'];
+?>
+
 <section>
-	<p><?=$staff['intro']?><p>
+	<p><?=$intro?></p>
 
-	<div class='roster'>
-		<?php 
-			foreach ($staff['roster'] as $roster){
-				$name = $roster['name'];
-				$img = $roster['img'];
+	<p><?=$join?></p>
 
-				echo "
-				<div class='staff-member'>
-					<h3>$name</h3>
-					<img src=$img>
-				</div>";
-
-			}
-		?>
-	</div>
+	<?php staffMachine($roster); ?>
 </section>

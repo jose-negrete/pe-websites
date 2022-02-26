@@ -1,0 +1,112 @@
+@import "meyer-reset.css";
+@import "setup.css";
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+
+body {
+  background-color: #fffae3;
+  margin: 25px;
+}
+
+body * {
+}
+
+header h1 {
+  font-size: 3em;
+  font-family: 'Rock 3D', cursive;
+  padding: 10px;
+  text-align: center;
+}
+
+nav, main, ul {
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+
+nav h2 {
+  font-size: 1.2em;
+  text-decoration: underline;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.nav-links {
+  display: inline-block;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.nav-links a {
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  background-color: black;
+  color: white;
+}
+
+main h2 {
+  font-size: 1.5em;
+}
+
+li:before {
+  content: "🖕";
+  margin-right: 10px;
+}
+
+li + li {
+  margin-top: 10px;
+}
+
+form {
+  font-family: sans-serif;
+  max-width: 400px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffc273;
+  box-shadow: 4px 4px black;
+  padding: 10px;
+}
+
+label, button {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.field {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field input {
+  box-shadow: 2px 2px black;
+  flex-basis: 50%;
+  border: none;
+  padding: 20px;
+}
+
+.field input:focus {
+  outline: 0;
+}
+
+button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  border: none;
+  background-color: #ff6200;
+  color: lemonchiffon;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 1.4em;
+  text-shadow: 2px 2px black;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+
+
+

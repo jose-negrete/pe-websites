@@ -1,18 +1,12 @@
-<?php $programs = $data['pages']['programs']; ?>
+<?php 
+	$programs = $data['pages']['programs']; 
+	$info = $programs['info']; 
+?>
+
 
 <section>
-	<?php
-		foreach($programs['info'] as $info) {
-			$heading = $info['heading'];
-			$paragraphs = $info['paragraphs'];
-
-			echo "<h3>$heading</h3>";
-
-			foreach($paragraphs as $paragraph) {
-				echo "<p>$paragraph</p>";
-			}
-
-
-		}
+	<?php 
+		pictureMaker("http://bikekitchen.org/wp-content/uploads/2012/08/409392_10150449932339506_827157615_n.jpg");
+		arrayOfObjects($info); 
 	?>
 </section>
