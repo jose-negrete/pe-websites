@@ -1,6 +1,13 @@
 <?php 
 	$aboutHeading = $data['about']['heading'];
 	$aboutBody = $data['about']['body'];
+
+	$lineOne = $data['lfps']['lineOne'];
+	$lineTwo = $data['lfps']['lineTwo'];
+
+
+	$randomLineOne = $lineOne[rand(0, count($lineOne)-1)];
+	$randomLineTwo = $lineTwo[rand(0, count($lineTwo)-1)];
 ?>
 <section class="about">
 	<div class="inner-column">
@@ -9,7 +16,7 @@
 				<div class="text-container">
 					<div class="text-content">
 						<h1><?=$aboutHeading?></h1>
-						<p><?=$aboutBody?></p>
+						<p><?=$randomLineOne?>. Unlike his competitors, <?=$randomLineTwo?>.</p>
 					</div>
 				</div>
 			</div>

@@ -35,15 +35,30 @@ main a {
   padding: 10px 15px;
 }
 
-.projects a {
+.projects a, .more-crap a {
   border: 1px solid var(--wheat);
   padding: 10px 15px;
   box-shadow: 4px 4px var(--wheat);
+  transition: all ease-in 0.2s;
+
+}
+
+.projects a:hover, 
+.more-crap a:hover {
+  transform: translate(0.2em, 0.2em);
+  box-shadow: 0 0 black;
 }
 
 .blog a {
   box-shadow: 4px 4px var(--black);
   border: 1px solid var(--black);
+  transition: all ease-in 0.2s;
+
+}
+
+.blog a:hover {
+  transform: translate(0.2em, 0.2em);
+  box-shadow: 0 0 black;
 }
 
 h2 {
@@ -79,12 +94,25 @@ nav {
 
 nav a:nth-of-type(2){
   font-size: 1.1em;
+  transition: all ease-in 0.2s;
 }
+
+nav a:nth-of-type(2):hover {
+  color: var(--wheat);
+  background-color: var(--black);
+}
+
 nav a picture {
   width: 40px;
   padding: 3px;
   border: 1px solid var(--black);
   box-shadow: 3px 3px var(--black);
+  transition: all ease-in 0.2s;
+}
+
+nav a picture:hover {
+  transform: translate(0.2em, 0.2em);
+  box-shadow: 0 0 black;
 }
 
 
@@ -92,10 +120,6 @@ nav a picture {
 
 .about picture {
   margin-top: 100px;
-}
-
-#circle {
-  width: 100%;
 }
 
 .text-content h1 {
@@ -136,7 +160,7 @@ ul, li p {
   margin: 50px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 20px;
 }
 
@@ -168,7 +192,7 @@ li p {
 }
 
 .blog .links {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .blog {
@@ -181,8 +205,19 @@ li p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 100px;
-  grip-gap: 50px;
+  grip-gap: 50px;  
 }
+
+.footer-links a {
+  transition: all 0.5s ease-in;
+}
+
+.footer-links a:hover:after {
+  content: "🖕";
+  transform: rotate(90deg);
+}
+
+
 
 footer .text-content h1{
   margin-top: 50px;
@@ -196,13 +231,12 @@ footer h4 {
   font-weight: 100;
   font-size: 14px;
   transform: translateY(80px);
-  text-align: right;
 }
 
 /* Case Studies */
 
 .title, .goals, .research, .design, .code {
-  margin-top: 100px;
+  /*margin-top: 100px;*/
 }
 
 .section-content p {
@@ -210,7 +244,7 @@ footer h4 {
 }
 
 .code {
-  margin-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .goals li {
@@ -227,10 +261,52 @@ footer h4 {
 }
 
 .section-content {
-  padding: 50px 0 100px;
+  padding: 80px 0 80px;
 }
 
+.title {
+  margin-top: 0;
+  padding: 50px 0;
+}
 
+.title-content {
+  display: flex;
+  align-items: center;
+}
+
+.title-content * {
+  flex-basis: 50%;
+}
+
+.title picture {
+  max-width: 250px;
+}
+
+.live-site {
+  width: 130px;
+  position: fixed;
+  top: 50vh;
+  right: -70px;
+  transform: rotate(-75deg);
+  transition: all 0.3s ease-in;
+}
+
+.live-site:hover {
+  transform: scale(3) translateX(-45px);
+}
+
+.more-crap {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 50px;
+  justify-content: space-between;
+  width: 54%;
+}
+
+.more-crap * {
+  white-space: nowrap;
+}
 
 @media only screen and (min-width: 700px) {
 
@@ -361,7 +437,6 @@ footer h4 {
   .blog-content .text-container {
     position: sticky;
     top: 120px;
-
   }
 
   footer .text-content {
@@ -377,15 +452,16 @@ footer h4 {
   }
 
   .goals ul, .section-content p {
-    grid-column: 4 / 13;
+    grid-column: 5 / 13;
     margin-top: 0;
   }
 
   .section-heading {
     position: sticky;
     top: 120px;
-    height: 130px;
+    height: 28px;
     grid-column: 1 / 4;
+
   }
 
   .goals li:nth-of-type(1) {
@@ -393,8 +469,27 @@ footer h4 {
   }
 
   .goals ul {
-    margin-top: -20px;
+    margin-top: -40px;
   }
+
+  .goals .section-heading {
+    height: 110px;
+  }
+
+  .research picture, .code picture {
+    grid-column: 5 / 13;
+    grid-row: 3;
+  }
+
+  /*.research .section-heading,
+  .code .section-heading {
+    grid-column: 10 / 13;
+  }
+
+  .research .section-content p,
+  .code .section-content p {
+    grid-column: 1 / 10;
+  }*/
 
 }
 

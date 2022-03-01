@@ -1,0 +1,23 @@
+@import "meyer-reset.css";
+@import "setup.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+.shadow {
+  background-image: radial-gradient(black 5%, transparent 20%),
+      radial-gradient(pink 70%, transparent 20%);
+  background-color: #e53935;
+  background-position: 0 0, 50px 50px;
+  background-size: 10px 10px;
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+

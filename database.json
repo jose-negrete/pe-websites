@@ -63,37 +63,78 @@
 			}
 		]
 	},
-	"footer": [
-		{
-			"title": "CodePen",
-			"link": "https://codepen.io/j-negrete"
-		},
-		{
-			"title": "GitHub",
-			"link": "https://github.com/jose-negrete"
-		},
-		{
-			"title": "Substack",
-			"link": "https://fishouttawater.substack.com/"
-		},
-		{
-			"title": "Reddit",
-			"link": "https://www.reddit.com/user/purpleplatypusparty"
-		},
-		{
-			"title": "dev.to",
-			"link": "https://dev.to/jnegrete"
-		},
-		{
-			"title": "CodeNewbie",
-			"link": "https://community.codenewbie.org/jnegrete"
-		}
-
-	],
+	"footer": {
+		"text" : [
+			{
+				"id": "home",
+				"heading": "Ok, now I'm getting stalker vibes.",
+				"paragraph": "Why are you still on the fence? Just write me a damn email already. If this site didn't do the trick then these links probably won't win you over either."
+			},
+			{
+				"id": "case-study",
+				"heading": "So what's it gonna be?",
+				"paragraph": "We working together? Send me an email! Still need more convincing? Check the links below. Showing this to your co-workers as a joke? Rot in hell! You Single? Let's mingle."
+			}
+		],
+		"links": [
+			{
+				"title": "CodePen",
+				"link": "https://codepen.io/j-negrete"
+			},
+			{
+				"title": "GitHub",
+				"link": "https://github.com/jose-negrete"
+			},
+			{
+				"title": "Substack",
+				"link": "https://fishouttawater.substack.com/"
+			},
+			{
+				"title": "Reddit",
+				"link": "https://www.reddit.com/user/purpleplatypusparty"
+			},
+			{
+				"title": "dev.to",
+				"link": "https://dev.to/jnegrete"
+			},
+			{
+				"title": "CodeNewbie",
+				"link": "https://community.codenewbie.org/jnegrete"
+			}
+		],
+		"blogLinks": [
+			"https://fishouttawater.substack.com/p/perpetual-education-week-1",
+			"https://fishouttawater.substack.com/p/portland-life",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-2",
+			"https://fishouttawater.substack.com/p/real-fast-blog-post",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-3",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-4",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-5",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-6",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-7",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-8",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-9",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-10",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-11",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-12",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-13",
+			"https://fishouttawater.substack.com/p/perpetual-education-week-14"
+		]
+	},
 	"caseStudies": [
 		{
 			"id": "igw",
-			"heading": "Intergalactic Plant World",
+			"heading": "Intergalactic Plant&nbsp;World",
+			"images": [
+				"images/igw-1.jpg", 
+				"images/igw-2.jpg",
+				"images/igw-3.jpg"
+			],
+			"liveSite": "https://peprojects.dev/alpha-3/jose/igw/",
+			"colors": {
+				"light": "#FFFFFF",
+				"dark": "#3D71E6"
+			},
 			"goals": {
 					"heading": "Goals",
 					"paragraphs": [
@@ -136,6 +177,16 @@
 					"Make this site interesting to an outsider."
 				]
 			},
+			"images": [
+				"images/alpha-1.png",
+				"images/alpha-2.png",
+				"images/alpha-3.png"
+			],
+			"liveSite": "https://peprojects.dev/alpha-3/jose/lesson-99/",
+			"colors": {
+				"light": "#FFFFFF",
+				"dark": "#E63946"
+			},
 			"research": {
 				"heading": "Research",
 				"paragraphs": [
@@ -163,7 +214,26 @@
 					"I wanted to see if I could generate an id with an if statement inside a foreach loop for Derek. Ran into some issues with the variables not working. Lots of trial and error. Eventually got it in a working state. Now when you click Derek’s link in the intro paragraph at the top of the page it will scroll down to his card. I’m a freaking wizard."
 				]
 			}
-		}
-			
-	]
+		}		
+	],
+	"meta": [
+		"clean-meta.jpg",
+		"designer-meta.jpg",
+		"gandhi-meta.jpg",
+		"epstein-meta.jpg",
+		"rip-meta.jpg",
+		"wolf-meta.jpg"
+	],
+	"lfps": {
+		"lineOne": [
+			"He wants to help small businesses and non-profits with bringing their ideas to the next level by using the most dangerous tool known to modern man (the web)",
+			"He wants to help you make more money and witness the desecration of your rivals by upgrading your web presence and using questionably unethical business practices"
+
+		],
+		"lineTwo": [
+			"he has an adaptive skill set that is valuable at every stage of the design process",
+			"he's willing to sacrifice his reputation and put the lives of others at stake"
+		]
+	}
+
 }
