@@ -1,64 +1,35 @@
 <?php
-	$themeClass = '';
 
-	// Did they choose a theme?
-	if ( isset($_POST['theme-toggled']) ){
-		
-	// if yes... set the other theme
-		if ( $_POST['theme-toggled'] === 'dark' ){
-			echo 'light';
-		} else {
-			echo 'dark';
-		}
-		
-	// save it to the cookie
-		setcookie('jose', 'flooby');
+	// if ['color-scheme'] exists in the $_COOKIE array then CSCV equals its value, if not then the CSCV equals an empty string.
+	$colorSchemeCookieValue = $_COOKIE["color-scheme"] ? $_COOKIE["color-scheme"] : "";
 
-	
-	// run the rest of the page
-
-
-	} else {
-
-
-	// see if they have previously set the theme
-
+	// If CSCV isn't empty, CS equals CSCV.
+	if ( !empty($colorSchemeCookieValue) ) {
+		$colorScheme = $colorSchemeCookieValue;
 	}
 
+	// If ['toggle'] exists in the superglobal array $toggle equals its value. 
+	$toggled = isset($_POST['toggle']);
 
-	// if (!empty($_COOKIE['theme'])) {
-	//   	if ($_COOKIE['theme'] == 'dark') {
-	//    	$themeClass = 'dark-theme';
-	//   	} else if ($_COOKIE['theme'] == 'light') {
-	//     	$themeClass = 'light-theme';
-	//   	}  
-	// }
+	// If $toggle is true
+	if ($toggled) {
+
+		// If CS equals 'dark', then CS equals 'light', else CS equals 'dark'.
+		$colorScheme = ($colorScheme == 'dark') ? 'light' : 'dark';
+		setCookie('color-scheme', $colorScheme);
+	}
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<!-- etc. -->
-<body class="<?php echo $themeClass; ?>">
-<!-- etc. -->
+<html class='<?=$colorScheme?>'>
+	<head>
+		<link rel='stylesheet' href='css/style.css'>
+	</head>
 
-<form method='POST'>
-	<button type='submit' name='theme-toggled' value='dark'>Submit</button>
-</form>
+	<body>
+		<h1><span></span></h1>
 
-<!-- <script>
-  const btn = document.querySelector(".btn-toggle");
-  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-  
-  btn.addEventListener("click", function() {
-    if (prefersDarkScheme.matches) {
-      document.body.classList.toggle("light-mode");
-      var theme = document.body.classList.contains("light-mode") ? "light" : "dark";
-    } else {
-      document.body.classList.toggle("dark-mode");
-      var theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
-    }
-    document.cookie = "theme=" + theme;
-  });
-</script> -->
-</body>
+		<form method='POST'>
+			<button name='toggle'>◐</button>
+		</form>
+	</body>
 </html>
