@@ -2,9 +2,22 @@
 @import "setup.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
+
+
 :root {
   --wheat: #FDECD8;
   --black: #1C1A1A;
+}
+
+body {
+  min-height: 100vh;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 body {
