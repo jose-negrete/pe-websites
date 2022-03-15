@@ -12,7 +12,7 @@
 			$userInfo = [
 				[
 					"username" => "kenny",
-					"password" => "login"
+					"password" => password_hash("login", PASSWORD_DEFAULT)
 				],
 				[
 					"username" => "Derek",
@@ -47,6 +47,8 @@
 					"password" => "Newsome"
 				]
 			];
+
+
 
 			$title = "Please Enter Your Username and Password";
 
