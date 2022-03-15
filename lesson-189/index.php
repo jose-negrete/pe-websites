@@ -9,46 +9,11 @@
 <body>
 	<div class="inner-column">
 		<?php 
-			$userInfo = [
-				[
-					"username" => "kenny",
-					"password" => password_hash("login", PASSWORD_DEFAULT)
-				],
-				[
-					"username" => "Derek",
-					"password" => "Wood"
-				],
-				[
-					"username" => "Alex",
-					"password" => "Vong"
-				],
-				[
-					"username" => "Brian",
-					"password" => "Lowerey"
-				],
-				[
-					"username" => "Ivy",
-					"password" => "Reynolds"
-				],
-				[
-					"username" => "Shayne",
-					"password" => "McGregor"
-				],
-				[
-					"username" => "Joshua",
-					"password" => "Gage"
-				],
-				[
-					"username" => "Tara",
-					"password" => "Haskamp"
-				],
-				[
-					"username" => "Jevohn",
-					"password" => "Newsome"
-				]
-			];
 
-
+			$siteData = file_get_contents('database.json');
+			$data = json_decode($siteData, true);
+			
+			$userInfo = $data["userInfo"];
 
 			$title = "Please Enter Your Username and Password";
 
